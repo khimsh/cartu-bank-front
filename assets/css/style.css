@@ -201,13 +201,36 @@ ol {
   border-radius: 5px;
 }
 
+.banner {
+  border-radius: 20px;
+}
 .banner--hero {
   margin-bottom: 40px;
   padding: 76px 65px;
   width: 100%;
   height: 340px;
   background-repeat: no-repeat;
-  border-radius: 20px;
+}
+.banner--appstore {
+  position: relative;
+  padding-block: 40px;
+  padding-inline: 85px;
+  display: flex;
+  align-items: center;
+  gap: 74px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner--appstore::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: hsla(209deg, 65%, 32%, 0.35);
+}
+.banner--appstore * {
+  position: relative;
 }
 .banner__title {
   font-family: var(--ff-nino-mtavruli);
@@ -215,6 +238,53 @@ ol {
   font-weight: 700;
   color: #fff;
   line-height: 1.2;
+}
+.banner__title--sm {
+  font-size: 35px;
+  max-width: 50ch;
+}
+
+.appstore__title {
+  margin-bottom: 25px;
+  font-family: "BPG Mrgvlovani Caps 2010";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.store-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.store-btn {
+  width: 176px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  transition: all 200ms ease-in-out;
+}
+.store-btn--google-play {
+  background-color: #a39161;
+  color: #fff;
+}
+.store-btn--google-play:hover, .store-btn--google-play:focus {
+  background-color: #ecc173;
+}
+.store-btn--appstore {
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+.store-btn--appstore:hover, .store-btn--appstore:focus {
+  background-color: #fff;
+  color: #000000;
 }
 
 .news {
