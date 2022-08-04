@@ -1,0 +1,21 @@
+.products {
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+    &__title {
+        margin-bottom: 80px;
+        font-family: var(--ff-nino-mtavruli);
+        font-size: 30px;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+    }
+
+    &__grid {
+        padding-inline: 137px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(513px, 1fr));
+        justify-content: space-between;
+        gap: 60px;
+    }
+}

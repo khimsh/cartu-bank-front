@@ -1,0 +1,106 @@
+.product-card {
+    &__link {
+        --title-clr: #000;
+        --text-clr: #707070;
+        --icon-bg: #a39161;
+        --icon-clr: #003d76;
+        --cta-clr: transparent;
+
+        display: block;
+        padding: 46px 36px;
+        padding-bottom: 27px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.16);
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+
+        &:hover,
+        &:focus {
+            --title-clr: #fff;
+            --text-clr: #fff;
+            --icon-bg: #fff;
+            --icon-clr: #a39161;
+            --cta-clr: #fff;
+
+            background-color: #a39161;
+        }
+    }
+
+    &__header {
+        margin-bottom: 47px;
+        display: flex;
+        align-items: center;
+        gap: 34px;
+    }
+
+    &__icon {
+        position: relative;
+        width: 54px;
+        height: 54px;
+        display: grid;
+        place-content: center;
+        border: 1px solid #a39161;
+        border-radius: 5px;
+        background-color: #fff;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            bottom: 4px;
+            width: 7px;
+            height: 7px;
+            border-radius: 7px;
+            background-color: var(--icon-bg);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -4px;
+            top: 4px;
+            width: 7px;
+            height: 7px;
+            border-radius: 7px;
+            background-color: var(--icon-bg);
+        }
+
+        i {
+            display: block;
+            color: var(--icon-clr);
+            font-size: 22px;
+        }
+    }
+
+    &__title {
+        font-family: var(--ff-nino-mtavruli);
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--title-clr);
+    }
+
+    &__body {
+        font-family: var(--ff-mrgvlovani);
+        font-size: 12px;
+        color: var(--text-clr);
+    }
+
+    &__cta {
+        margin-top: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+
+        span {
+            font-family: 'BPG Mrgvlovani Caps 2010';
+            font-size: 12px;
+            color: var(--cta-clr);
+        }
+
+        i {
+            color: var(--cta-clr);
+        }
+    }
+}
