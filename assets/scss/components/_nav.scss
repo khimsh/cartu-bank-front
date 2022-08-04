@@ -1,0 +1,106 @@
+.nav {
+    & > ul {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__dropdown {
+        position: relative;
+    }
+
+    &__btn {
+        position: relative;
+        background-color: transparent;
+        border: 0;
+        padding: 28px 20px;
+        padding-right: 44px;
+        border-radius: 5px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            span {
+                color: #000000;
+            }
+        }
+
+        &.active {
+            background-color: #003d76;
+
+            span {
+                color: #fff;
+            }
+
+            i {
+                color: #fff;
+            }
+        }
+
+        span {
+            font-family: var(--ff-nino-mtavruli);
+            font-size: 20px;
+            font-weight: 700;
+            color: #003d76;
+            transition: color 150ms ease-in-out;
+        }
+
+        i {
+            position: absolute;
+            top: 50%;
+            right: 14px;
+            transform: translateY(-50%);
+            color: hsl(0 0 0 / 0.18);
+        }
+    }
+
+    &__content {
+        position: absolute;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    &__list {
+        padding-inline: 20px;
+        padding-block: 20px;
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: hsl(0 0% 100% / 0.95);
+
+        @media (min-width: 1366px) {
+            gap: 20px;
+        }
+    }
+
+    &__link {
+        display: block;
+        font-family: var(--ff-nino-mtavruli);
+        font-size: 12px;
+        font-weight: 700;
+        color: #000000;
+        text-decoration: none;
+        transition: color 150ms ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: #003d76;
+        }
+    }
+
+    &__internet-bank-btn {
+        height: 78px;
+        display: flex;
+        align-items: center;
+        font-family: var(--ff-nino-mtavruli);
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        background-color: #1c5285;
+        padding: 0 18px;
+        border-radius: 5px;
+    }
+}
