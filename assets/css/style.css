@@ -217,6 +217,63 @@ ol {
   line-height: 1.2;
 }
 
+.footer {
+  background-color: #f6f6f6;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.footer__grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__grid > * {
+  flex-basis: 240px;
+}
+.footer__title {
+  margin-bottom: 19px;
+  font-family: var(--ff-nino-mtavruli);
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c5285;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__link {
+  font-family: var(--ff-nino-mtavruli);
+  font-size: 14px;
+  font-weight: 700;
+  color: #474747;
+  text-decoration: none;
+}
+.footer__copy {
+  font-family: "BPG Mrgvlovani Caps 2010";
+  font-size: 14px;
+  color: hsla(209deg, 65%, 32%, 0.58);
+}
+.footer__copy a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.social-menu a {
+  color: #1c5285;
+  font-size: 18px;
+  text-decoration: none;
+}
+.social-menu--footer {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
 .container {
   width: min(100% - 2rem, 1360px);
   margin: 0 auto;
