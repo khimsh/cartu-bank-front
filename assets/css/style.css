@@ -114,12 +114,31 @@ ol {
 .text-flow > * + * {
   margin-top: 20px;
 }
+.text-flow h2,
+.text-flow h3 {
+  font-family: var(--ff-nino-mtavruli);
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .text-flow h2 {
   margin-bottom: 31px;
-  font-family: var(--ff-nino-mtavruli);
   font-size: 20px;
   color: #003d76;
-  text-transform: capitalize;
+}
+.text-flow h3 {
+  margin-top: 50px;
+  font-size: 18px;
+  color: #000000;
+}
+.text-flow ul {
+  list-style-type: disc;
+  padding-left: 16px;
+}
+.text-flow li {
+  font-family: var(--ff-mrgvlovani);
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.7;
 }
 .text-flow p {
   font-family: var(--ff-mrgvlovani);

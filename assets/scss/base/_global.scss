@@ -67,12 +67,35 @@ ol {
         margin-top: 20px;
     }
 
+    h2,
+    h3 {
+        font-family: var(--ff-nino-mtavruli);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
     h2 {
         margin-bottom: 31px;
-        font-family: var(--ff-nino-mtavruli);
         font-size: 20px;
         color: #003d76;
-        text-transform: capitalize;
+    }
+
+    h3 {
+        margin-top: 50px;
+        font-size: 18px;
+        color: #000000;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 16px;
+    }
+
+    li {
+        font-family: var(--ff-mrgvlovani);
+        font-size: 14px;
+        color: #000000;
+        line-height: 1.7;
     }
 
     p {
