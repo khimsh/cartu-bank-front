@@ -124,13 +124,60 @@
                     </h2>
                 </section>
 
-                <section>
+                <section class="currency">
                     <div class="currency-table">
-                        <h2>ვალუტის კურსი</h2>
+                        <h2 class="currency__title">ვალუტის კურსი</h2>
                     </div>
 
                     <div class="currency-converter">
-                        <h2>კონვერტორი</h2>
+                        <h2 class="currency__title">კონვერტორი</h2>
+
+                        <div class="converter">
+                            <div class="converter__tabs">
+                                <button class="converter__btn active" data-currency="buy">ყიდვა</button>
+                                <button class="converter__btn" data-currency="sell">გაყიდვა</button>
+                            </div>
+
+                            <div class="converter__content">
+                                <div class="converter__input">
+                                    <input type="number" name="input-amount" id="input-amount" placeholder="0.0" />
+                                    <div class="select-currency">
+                                        <button class="select-currency__btn">
+                                            <span class="select-currency__selected">GEL</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="select-currency__options">
+                                            <button class="select-currency__option">gel</button>
+                                            <button class="select-currency__option">usd</button>
+                                            <button class="select-currency__option">eur</button>
+                                            <button class="select-currency__option">gbp</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="converter__switch">
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </button>
+
+                                <div class="converter__input">
+                                    <input type="number" name="input-amount" id="input-amount" placeholder="0.0" />
+                                    <div class="select-currency">
+                                        <button class="select-currency__btn">
+                                            <span class="select-currency__selected">GEL</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="select-currency__options">
+                                            <button class="select-currency__option">gel</button>
+                                            <button class="select-currency__option">usd</button>
+                                            <button class="select-currency__option">eur</button>
+                                            <button class="select-currency__option">gbp</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
