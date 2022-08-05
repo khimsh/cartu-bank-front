@@ -53,3 +53,36 @@ ol {
         clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     }
 }
+
+.page-content {
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    gap: 30px;
+    align-items: start;
+    padding-bottom: 165px;
+}
+
+.text-flow {
+    & > * + * {
+        margin-top: 20px;
+    }
+
+    h2 {
+        margin-bottom: 31px;
+        font-family: var(--ff-nino-mtavruli);
+        font-size: 20px;
+        color: #003d76;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-family: var(--ff-mrgvlovani);
+        font-size: 14px;
+        color: #000000;
+        line-height: 1.7;
+
+        span {
+            margin-right: 20px;
+        }
+    }
+}

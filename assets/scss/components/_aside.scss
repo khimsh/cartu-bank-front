@@ -1,0 +1,91 @@
+.side-menu {
+    padding-bottom: 47px;
+    background-color: #174e82;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+    &__title {
+        padding-block: 12px;
+        padding-inline: 30px;
+        font-family: var(--ff-nino-mtavruli);
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #003d76;
+        background-color: #f8f8f8;
+    }
+
+    &__content {
+        padding-block: 13px;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__link {
+        margin-block: 16px;
+        font-family: var(--ff-nino-mtavruli) !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        color: #fff;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding-block: 16px;
+        padding-inline: 30px;
+        font-family: var(--ff-nino-mtavruli);
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        text-align: left;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 0;
+        transition: all 150ms ease-in-out;
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: #174e82;
+            background-color: #e8edf3;
+        }
+
+        &.active {
+            color: #174e82;
+            background-color: #e8edf3;
+
+            i {
+                transform: rotate(180deg);
+            }
+        }
+
+        i {
+            margin-top: -4px;
+            transition: transform 150ms ease-in-out;
+        }
+    }
+
+    a {
+        padding-inline: 30px;
+        display: block;
+        font-family: var(--ff-mrgvlovani);
+        font-size: 10px;
+        color: #fff;
+        text-decoration: none;
+        transition: color 150ms ease-in-out;
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: #ecc173;
+        }
+    }
+}

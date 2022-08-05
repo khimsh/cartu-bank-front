@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cartu Bank</title>
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- JS -->
+        <script src="assets/js/swiper-bundle.min.js" defer></script>
+        <script src="assets/js/script.js" defer></script>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="container">
+                <header class="header">
+                    <div class="header__logo">
+                        <a href="index.html" aria-label="ქართუ ბანკი">
+                            <img src="assets/images/BLUE.svg" alt="" />
+                        </a>
+                    </div>
+
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <div class="nav__dropdown">
+                                    <button class="dropdonw__trigger nav__btn">
+                                        <span>ბანკის შესახებ</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="nav__content">
+                                        <ul class="nav__list">
+                                            <li><a href="#" class="nav__link">მიმოხილვა</a></li>
+                                            <li><a href="#" class="nav__link">ჩვენი გუნდი</a></li>
+                                            <li><a href="#" class="nav__link">ფინანსური მონაცემები</a></li>
+                                            <li><a href="#" class="nav__link">ბანკის რეიტინგები</a></li>
+                                            <li><a href="#" class="nav__link">ჩვენი პარტნიორები</a></li>
+                                            <li><a href="#" class="nav__link">სიახლეები</a></li>
+                                            <li><a href="#" class="nav__link">ვაკანსია</a></li>
+                                            <li><a href="#" class="nav__link">კონტაქტი</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav__dropdown">
+                                    <button class="dropdonw__trigger nav__btn">
+                                        <span>იურიდიული პირები</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="nav__content">
+                                        <ul class="nav__list">
+                                            <li><a href="#" class="nav__link">საოპერაციო მომსახურება</a></li>
+                                            <li><a href="#" class="nav__link">სესხები</a></li>
+                                            <li><a href="#" class="nav__link">დოკუმენტური ოპერაციები</a></li>
+                                            <li><a href="#" class="nav__link">სახაზინო პროდუქტები</a></li>
+                                            <li><a href="#" class="nav__link">ანაბრები</a></li>
+                                            <li><a href="#" class="nav__link">პლასტიკური ბარათები</a></li>
+                                            <li><a href="#" class="nav__link">ელექტრონული კომერცია</a></li>
+                                            <li><a href="#" class="nav__link">დისტანციური მომსახურება</a></li>
+                                            <li><a href="#" class="nav__link">სხვა</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav__dropdown">
+                                    <button class="dropdonw__trigger nav__btn active">
+                                        <span>ფიზიკური პირები</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="nav__content">
+                                        <ul class="nav__list">
+                                            <li><a href="#" class="nav__link">საოპერაციო მომსახურება</a></li>
+                                            <li><a href="#" class="nav__link">პლასტიკური ბარათები</a></li>
+                                            <li><a href="#" class="nav__link">სახაზინო პროდუქტები</a></li>
+                                            <li><a href="#" class="nav__link">ანაბრები</a></li>
+                                            <li><a href="#" class="nav__link">დისტანციური მომსახურება</a></li>
+                                            <li><a href="#" class="nav__link">ფულადი გზავნილები</a></li>
+                                            <li><a href="#" class="nav__link">სხვა</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="nav__internet-bank-btn">ინტერნეტ ბანკი</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__search">
+                        <button class="header__search-btn" aria-label="ძიება">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <div class="header__lang">
+                        <a href="#">
+                            <img src="assets/images/gb-flag.png" alt="" />
+                        </a>
+                    </div>
+                </header>
+
+                <section class="banner banner--hero" style="background-image: url(assets/images/banner-bg.png)">
+                    <h2 class="banner__title">
+                        ძლიერი ბანკი <br />
+                        ძლიერი საქართველოსთვის
+                    </h2>
+                </section>
+
+                <div class="page-content">
+                    <aside class="side-menu">
+                        <h2 class="side-menu__title">ბანკის შესახებ</h2>
+
+                        <nav>
+                            <ul>
+                                <li>
+                                    <div class="side-menu__dropdown">
+                                        <button class="active">
+                                            <span>მიმოხილვა</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="side-menu__content">
+                                            <ul>
+                                                <li>
+                                                    <a href="history.html" class="active">ისტორია</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">მისია და ხედვა</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">KYCB</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="side-menu__dropdown">
+                                        <button>
+                                            <span>ჩვენი გუნდი</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="side-menu__content">
+                                            <ul>
+                                                <li>
+                                                    <a href="history.html">აქციონერები</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">სამეთვალყურეო საბჭო</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">დირექტორატი</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="side-menu__dropdown">
+                                        <button>
+                                            <span>ფინანსური მონაცემები</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="side-menu__content">
+                                            <ul>
+                                                <li>
+                                                    <a href="history.html">წლიური ანგარიშები</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">წლიური ანგარიშები (აუდიტის დასკვნები)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">პოლარ 3-ის წლიური ანგარიშები</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">პოლარ 3-ის კვარტალური ანგარიშები</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">კვარტალური უწყისები</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">აუქციონერებზე გაცემული შემოსავლები</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="side-menu__link">ბანკის რეიტინგები</a>
+                                </li>
+
+                                <li>
+                                    <div class="side-menu__dropdown">
+                                        <button>
+                                            <span>ჩვენი პარტნიორები</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="side-menu__content">
+                                            <ul>
+                                                <li>
+                                                    <a href="history.html">საკორესპოდენტო ბანკები</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">საერთაშორისო ორგანიზაცები</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">ადგილობრივი პარტნიორები</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="side-menu__link">სიხლეები</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="side-menu__link">ვაკანსია</a>
+                                </li>
+
+                                <li>
+                                    <div class="side-menu__dropdown">
+                                        <button>
+                                            <span>კონტაქტი</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="side-menu__content">
+                                            <ul>
+                                                <li>
+                                                    <a href="history.html">ბანკის რეკვიზიტები</a>
+                                                </li>
+                                                <li>
+                                                    <a href="history.html">ბანკომატები და სერვის ცენტრები</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <main>
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li>
+                                    <a href="#">მთავარი</a>
+                                </li>
+                                <li>
+                                    <a href="#">ბანკის შესახებ</a>
+                                </li>
+                                <li>
+                                    <a href="#">მიმოხილვა </a>
+                                </li>
+                                <li>ისტორია</li>
+                            </ul>
+                        </div>
+
+                        <div class="about text-flow">
+                            <h2>ისტორია</h2>
+
+                            <p><span>2020</span> ძალაში შევიდა სახელმწიფო პროგრამა „იპოთეკური კრედიტების მხარდაჭერის მექანიზმი“</p>
+
+                            <p>
+                                <span>2020</span> სახელმწიფო პროგრამების ფარგლებში ბანკი ჩაერთო ახალ პროექტში - საკრედიტო საგარანტიო სქემა
+                            </p>
+
+                            <p><span>2020</span> სს "ტერა ბანკთან" დაიდო ხელშეკრულება ელ-კომერციის მომსახურების თაობაზე</p>
+
+                            <p>
+                                <span>2020</span> ბანკი გახდა საერთაშორისო საგადახდო სისტემა UnionPay-ის ძირითადი წევრი - ბარათების
+                                გამოშვებისა და მომსახურების უფლებით
+                            </p>
+
+                            <p>
+                                <span>2020</span> ბელარუსის რეზიდენტ ბანკში - Belarus Bank განხორციელდა ნოსტრო საკორესპონდენტო ანგარიშების
+                                გახსნა აშშ დოლარში, ევროსა და ბელარუსულ რუბლში
+                            </p>
+
+                            <p>
+                                <span>2020</span> ბანკი კლიენტებს სთავაზობს ბლუმბერგის BMatch და RFQ პლატფორმებზე განაცხადების პირდაპირ
+                                გაკეთებას და სავალუტო ბაზარზე ვაჭრობას. კლიენტს შეუძლია ბანკს მისცეს დავალება, რომ მისი სავალუტო გარიგების
+                                პირობები განათავსოს ბლუმბერგის სავაჭრო სისტემაში (BMatch ან/და RFQ პლატფორმებზე)
+                            </p>
+
+                            <p>
+                                <span>2020</span> ბანკი გახდა საქართველოს ფინანსთა სამინისტროს პირველადი დილერების საპილოტე პროგრამის
+                                მონაწილე. ბანკი, როგორც საქართველოს სახელმწიფო ფასიანი ქაღალდების ბაზრის პირველადი დილერი, კლიენტებს
+                                სთავაზობს სახელმწიფო ფასიანი ქაღალდების როგორც პირველად, ასევე მეორად ბაზარზე ვაჭრობის, შენახვისა და
+                                აღრიცხვის მომსახურებას
+                            </p>
+
+                            <p>
+                                <span>2019</span> ფულის გათეთრების და ტერორიზმის დაფინანსების აღკვეთის დეპარტამენტის თანამშრომლებმა
+                                კვალიფიკაციის ამაღლების მიზნით მონაწილეობა მიიღეს საერთაშორისო კომპეტენტური ორგანიზაციების, კერძოდ, ACAMS-ის
+                                და ATTF Luxemburg-ის მიერ ორგანიზებულ ტრენინგებში
+                            </p>
+
+                            <p><span>2019</span> დაინერგა XBRL და აღრიცხვისა და ანგარიშგების ახალი სტანდარტი</p>
+
+                            <p>
+                                <span>2019</span> ბანკმა გამოუშვა ახალი პროდუქტები - საპროცენტო და დისკონტური სადეპოზიტო სერტიფიკატები
+                                ლარში, აშშ დოლარსა და ევროში.
+                            </p>
+
+                            <p>
+                                <span>2019</span> ბანკი ქართუმ დაიწყო აქტივობა ფასიანი ქაღალდების ბაზარზე, შეიძინა 2 კომპანიის ობლიგაციები 5
+                                მილიონი აშშ დოლარისა და 3 მილიონი ლარის ოდენობით
+                            </p>
+
+                            <p>
+                                <span>2019</span> ცნობილმა სარეიტინგო სააგენტომ Standard & Poor’s-მა დაადასტურა სს „ბანკი ქართუ“-ს მოქმედი
+                                საერთაშორისო რეიტინგი (B), სტაბილური განვითარების პერსპექტივით
+                            </p>
+
+                            <p>
+                                <span>2018</span> ბანკი აღიჭურვა უჩვეულო და საეჭვო პირების მაკონტროლებელი დამატებითი საინფორმაციო-საძიებო
+                                ბაზების პროვაიდერი კომპანიის - DOW JONES-ის საინფორმაციო უზრუნველყოფით.
+                            </p>
+
+                            <p>
+                                <span>2018</span> წარმატებით დაინერგა ფინანსური ინსტრუმენტების გაუფასურების მეთოდოლოგია IFRS 9-ის მიხედვით
+                            </p>
+
+                            <p>
+                                <span>2018</span> დასრულდა სათადარიგო სასერვეროს აწყობის პროექტი. აღნიშნული შესაძლებლობას იძლევა, რომ
+                                საჭიროების შემთხვევაში ბანკი სრულიად დამოუკიდებლად მოემსახუროს VISA-ს და Mastercard-ის სისტემის ბარათების
+                                მფლობელებს, ბანკომატებს და POS ტერნიმალებს, ასევე ელ-კომერციის მერჩანტებს
+                            </p>
+
+                            <p>
+                                <span>2018</span> დაიწყო უკონტაქტო ბარათების გამოშვება, წლის ბოლოს კი ბანკის საბარათე ბიზნესი მთლიანად
+                                გადავიდა უკონტაქტო პროდუქტების გამოშვებაზე - ვიზას უკონტაქტო ბარათების შემდეგ დაიწყო მასტერქარდის უკონტაქტო
+                                ბარათების გამოშვება
+                            </p>
+
+                            <p><span>2018</span> დაინერგა ორი პრემიალური საბარათე პროდუქტი - Visa Infinite და Mastercard World Elite</p>
+
+                            <p>
+                                <span>2018</span> ,,ბანკ ქართუს“ სარეიტინგო კომპანია „Fitch“-ის მიერ მიენიჭა IDR-ის (Issuer Default Rating)
+                                რეიტინგი „B სტაბილური პერსპექტივა“, ხოლო საერთაშორისო სარეიტინგო კომპანია ,,S&P Global Rating’’ - ის მოქმედი
+                                რეიტინგი იყო ,,B სტაბილური განვითარება’’
+                            </p>
+
+                            <p><span>2017</span> დეკემბერში ბანკმა გამოუშვა Visa და MasterCard უკონტაქტო ბარათები განახლებული დიზაინით</p>
+
+                            <p><span>2017</span> სექტემბერში გააქტიურდა ბანკი ქართუს მობაილ ბანკის აპლიკაცია და მობაილ დიჯიპასი</p>
+
+                            <p>
+                                <span>2017</span> ოქტომბერში სასტუმროში - „Paragraph Resort & Spa Shekvetili, Autograph Collection Hotel“
+                                ამოქმედდა სს ,,ბანკი ქართუს’’ ბათუმის სერვისცენტრის 24 საათიანი შეკვეთილის განყოფილება
+                            </p>
+
+                            <p>
+                                <span>2017</span> 3 აგვისტოს საერთაშორისო სარეიტინგო კომპანია „S&P Global Rating“-ის მიერ ჩატარებული კვლევის
+                                შედეგად, სს „ბანკ ქართუს“ მიენიჭა ემიტენტის საკრედიტო რეიტინგი (Issuer Credit Rating) „B/B სტაბილური
+                                განვითარება“
+                            </p>
+
+                            <p>
+                                <span>2017</span> ივნისში ბანკი ქართუმ მონაწილეობა მიიღო კამპანიაში ,,დარგე შენი ხე’’, რომლის ფარგლებშიც
+                                დაირგა 1000 ძირი ხე ბორჯომ-ხარაგაულის ეროვნული პარკის ნახანძრალი ტერიტორიის აღსადგენად
+                            </p>
+
+                            <p>
+                                <span>2017</span> ივნისის თვეში გაიხსნა ბანკი ქართუს ტრენინგ ცენტრი, სადაც ბანკის თანამშრომლებისთვის ტარდება
+                                სხვადასხვა სახის ტრენინგი
+                            </p>
+
+                            <p>
+                                <span>2017</span> მაისში გააქტიურდა cartubank.ge-ს დომენის ქართულენოვანი ანალოგი - ბანკიქართუ.გე. რომლის
+                                მეშვეობითაც უკვე მშობლიურ ენაზეა შესაძლებელი ბანკის ვებგვერდთან წვდომა
+                            </p>
+
+                            <p>
+                                <span>2017</span> 1 მაისიდან დაინერგა ფიფქიანი ნომერი - *8080, რომლის საშუალებითაც უფრო სწრაფად და მარტივად
+                                გახდა შესაძლებელი ბანკთან დაკავშირება მობილური ტელეფონით
+                            </p>
+
+                            <p><span>2017</span> აპრილში ბანკი ქართუ გაწევრიანდა ,,საქართველოს ბიზნეს ასოციაციაში’’</p>
+
+                            <p><span>2017</span> ბანკი ქართუ 20 წლისაა! იხ. “საიუბილეო კატალოგი 20/100“</p>
+
+                            <p><span>2016</span> ბანკი ქართუს სწრაფი ფულად გზავნილებს კიდევ ერთი სისტემა შეემატა - CONTACT.</p>
+
+                            <p><span>2015</span> ბანკი ქართუს სწრაფი ფულად გზავნილების სიტემას შეემტა ახალი გავნილი "ზოლოტაია კორონა".</p>
+
+                            <p>
+                                <span>2015</span> საერთაშორისო სარეიტინგო კომპანია „Fitch“-ის მიერ ჩატარებული საფუძვლიანი კლევის შედეგად,
+                                2015 წლის 30 სექტემბერს კომპანია „Fitch“-მა ბანკი ქართუს მიანიჭა IDR-ის (Issuer default Rating) რეიტინგი „B+
+                                სტაბილური პერსპექტივა“.
+                            </p>
+
+                            <p>
+                                <span>2015</span> ბანკი ქართუმ სახელმწიფო პროგრამაში „აწარმოე საქართველოში“ ჩართვისა და კომპანიების
+                                მხარდაჭერისთვის ბიზნესგაერთიანება საქართველოს დამსაქმებელთა ასოციაციისა და მეწარმეობის განვითარების
+                                სააგენტოსგან მიიღო მადლობის სიგელი.
+                            </p>
+
+                            <p>
+                                <span>2015</span> ბანკი ქართუმ კორპორაციულ კლიენტებს მოკლევადიანი ფულადი საჭიროებების დასაფინანსებლად
+                                შესთავაზა VISA/MasterCard საკრედიტო ბიზნესბარათები.
+                            </p>
+
+                            <p>
+                                <span>2014</span> ბანკი ქართუ მონაწილეობს სახელმწიფოს მიერ ინიცირებულ პროექტებში – „შეღავათიანი აგროკრედიტი“
+                                და „აწარმოე საქართველოში“.
+                            </p>
+
+                            <p>
+                                <span>2014</span> ბანკი ქართუმ MasterCard ბარათებისთვის დანერგა უსაფრთხოების უმაღლესი სტანდარტი – MasterCard
+                                Secure Code.
+                            </p>
+
+                            <p>
+                                <span>2013</span> ბანკი ქართუს მთაწმინდის, ქუთაისისა და ბათუმის ფილიალები გადაკეთდა შესაბამის
+                                სერვისცენტრებად.
+                            </p>
+
+                            <p><span>2013</span> შეიცვალა ბანკის სტრუქტურა.</p>
+
+                            <p>
+                                <span>2011</span> ბანკი ქართუმ ამიერკავკასიაში პირველმა და აღმოსავლეთ ევროპაში ერთ-ერთმა პირველთაგანმა
+                                დანერგა ინტერნეტტრანზაქციების უსაფრთხოების უმაღლესი სტანდარტი Visa ბარათებისთვის – ვიზას უსაფრთხოების
+                                სერვისი – Verified by Visa.
+                            </p>
+
+                            <p><span>2011</span> გაიხსნა ბანკი ქართუს ისნის სერვისეცნტრი.</p>
+
+                            <p><span>2009</span> გაიხსნა ბანკი ქართუს თელავის სერვისცენტრი.</p>
+
+                            <p><span>2008</span> გაიხსნა ბანკი ქართუს საბურთალოს და გორის სერვისცენტრები.</p>
+
+                            <p>
+                                <span>2007</span> ბანკი ქართუმ, ვაჭრობის ხელშეწყობის მიზნით, American Express Bank-თან მიაღწია შეთანხმებას 1
+                                მლნ აშშ დოლარის ოდენობის საკრედიტო ხაზის გამოყოფის შესახებ.
+                            </p>
+
+                            <p>
+                                <span>2007</span> საერთაშორისო განვითარების ასოციაციამ (IDA) და სოფლის მეურნეობის განვითარების საერთაშორისო
+                                ფონდმა (IFAD), საქართველოში მსოფლიო ბანკის (World Bank) ფინანსური მხარდაჭერით განსახორციელებელი პროექტის
+                                ფარგლებში, საქართველოს ფინანსთა სამინისტროსთან გააფორმეს ხელშეკრულება. აღნიშნული ხელშეკრულების საფუძველზე,
+                                სს "ბანკი ქართუ"-ს სასოფლო-სამეურნეო პროექტების დასაფინანსებლად დაუმტკიცდა 2,5 მლნ აშშ დოლარის ოდენობის
+                                საკრედიტო ხაზი.
+                            </p>
+
+                            <p>
+                                <span>2007</span> ბანკი ქართუმ შავი ზღვის ვაჭრობისა და განვითარების ბანკთან (BSTDB) მიაღწია შეთანხმებას 2008
+                                წლის იანვრიდან 5 მლნ აშშ დოლარის მოკლევადიანი, განახლებადი საკრედიტო ხაზის გამოყოფის შესახებ. შეთანხმების
+                                ფარგლებში, 2007 წელს სავაჭრო ოპერაციების დასაფინანსებლად ხელი მოეწერა ხელშეკრულებას 1,5 მლნ აშშ დოლარის
+                                მოცულობის საკრედიტო ხაზის გამოყოფის შესახებ.
+                            </p>
+
+                            <p><span>2006</span> გაიხსნა ბანკი ქართუს ვაკის სერვისცენტრი.</p>
+
+                            <p>
+                                <span>2006</span> ბანკი ქართუმ ევროპის რეკონტრუქციისა და განვითარების ბანკთან (EBRD) ხელი მოაწერა
+                                ხელშეკრულებას ვაჭრობის დაფინანსების ხელშეწყობის საგარანტიო ხაზის გამოყოფის შესახებ.
+                            </p>
+
+                            <p>
+                                <span>2006</span> ბანკი ქართუ სწრაფ ფულად გზავნილებს ახორციელებს Money Express-ის, Anelik-ის და
+                                Unistream-სისტემების საშუალებით.
+                            </p>
+
+                            <p>
+                                <span>2006</span> ბანკი ქართუმ დანერგა მოკლე ტექსტური შეტყობინებებით (SMS) ინფორმაციის გავრცელების
+                                მომსახურება.
+                            </p>
+
+                            <p><span>2006</span> ბანკი ქართუმ MasterCard-გან მიიღო ელექტრონული კომერციის ლიცენზია.</p>
+
+                            <p><span>2005</span> ბანკი ქართუმ VISA International-გან მიიღო ელექტრონული კომერციის ლიცენზია.</p>
+
+                            <p><span>2005</span> ბანკი ქართუმ დანერგა დისტანციური მომსახურების სერვისი – ინტერნეტბანკი.</p>
+
+                            <p><span>2004</span> გაიხსნა ბანკი ქართუს ბათუმის ფილიალი.</p>
+
+                            <p>
+                                <span>2004</span> ბანკი ქართუმ, პარტნიორ ბანკებთან ერთად, რუსეთსა და დსთ-ის ქვეყნებში (აზერბაიჯანი, სომხეთი,
+                                უკრაინა, ყაზახეთი, ყირგიზეთი, ტაჯიკეთი, უზბეკეთი, მოლდოვის რესპუბლიკა, ბელორუსი) ახალი საბანკო პროდუქტი –
+                                ფულადი გზავნილების სისტემა „Быстрая Почта“ დანერგა.
+                            </p>
+
+                            <p>
+                                <span>2004</span> სერტიფიცირების შემდეგ ბანკი ქართუს საქართველოს სავაჭრო და მომსახურების ობიექტებში
+                                MasterCard-ის პლასტიკური ბარათების მომსახურების უფლება მიენიჭა. ამჟამად ბანკი ქართუ ადგილობრივ ბაზარზე
+                                ერთადერთი ბანკია, რომელიც VISA-ის, MasterCard-ის, American Express-ის დაDiners Club-ის საერთაშორისო
+                                პლასტიკურ ბარათებს ემსახურება.
+                            </p>
+
+                            <p><span>2003</span> ბანკი ქართუმ დაიწყო MasterCard ბარათების გამოშვება.</p>
+
+                            <p>
+                                <span>2003</span> საგამომცემლო სახლ Georgian Times-ის მიერ ორგანიზებულ, ყოველწლიური ბიზნესრეიტინგის საზეიმო
+                                ცერემონიალზე ბანკი ქართუმ გაიმარჯვა ნომინაციაში „წლის საუკეთესო კომპანია/ბიზნესი“, ასევე, დაჯილდოვდა პრიზით
+                                ნომინაციაში „სტაბილური პროგრესი და დინამიკურობა“.
+                            </p>
+
+                            <p><span>2003</span> ბანკი ქართუმ მოიპოვა American Express და Diners Club ბარათების მომსახურების უფლება.</p>
+
+                            <p>
+                                <span>2002</span> საგამომცემლო სახლმა Georgian Times ტრადიციულ ბიზნესრეიტინგში ბანკი ქართუ და მისი
+                                ხელმძღვანელი საქართველოს ოცდაერთ საუკეთესო კერძო კომპანიათა შორის დაასახელა.
+                            </p>
+
+                            <p><span>2002</span> ბანკი ქართუ გახდა MasterCard-International საგადამხდელო სისტემის ძირითადი წევრი.</p>
+
+                            <p><span>2001</span> ბანკი ქართუს მიენიჭა VISA-ის საერთაშორისო საბარათო სისტემის ძირითადი წევრის სტატუსი.</p>
+
+                            <p>
+                                <span>2001</span> ბანკი ქართუმ შეისყიდა სს კბ „აბსოლუტი“-ს აქტივ-პასივების ნაწილი, გახდა საბარათო ბიზნესის
+                                სრული პაკეტისა და საპროცესინგო ცენტრის მფლობელი.
+                            </p>
+
+                            <p><span>2001</span> გაიხსნა ბანკი ქართუს მთაწმინიდსა და ქუთაისის ფილიალები.</p>
+
+                            <p>
+                                <span>2000</span> ბანკი ქართუმ დაიწყო ფიზიკური პირებისათვის სწრაფი ფულადი გზავნილების განხორციელება ფულადი
+                                გზავნილების სისტემა Western Union-ისა და Импексбанк-ი საშუალებით.
+                            </p>
+
+                            <p><span>1998</span> ბანკი ქართუმ მიიღო საქართველოს ფასიანი ქაღალდების გამოშვების ლიცენზია.</p>
+
+                            <p><span>1998</span> სს კბ „როსიისკი კრედიტი-ქართუ“-ს ეწოდა სს „ბანკი ქართუ“.</p>
+
+                            <p><span>1997</span> სს კბ „როსიისკი კრედიტი-ქართუ“ გაწევრიანდა SWIFT-ის საერთაშორისო სისტემაში.</p>
+
+                            <p><span>1997</span> სს კბ „როსიისკი კრედიტი-ქართუ“-მ მიიღო საბანკო ლიცენზია.</p>
+
+                            <p><span>1996</span> დაფუძნდა სს კომერციული ბანკი „როსიისკი კრედიტი-ქართუ“.</p>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__grid">
+                    <div>
+                        <img src="assets/images/BLUE.svg" alt="" />
+                        <ul class="social-menu social-menu--footer">
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <p class="footer__copy">Copyright © 2022 Cartu Bank</p>
+                        <p class="footer__copy">Created by <a href="http://" target="_blank" rel="noopener noreferrer">Proservice</a></p>
+                    </div>
+
+                    <div class="footer__nav">
+                        <h2 class="footer__title">საჭირო ბმულები</h2>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">ვალუტის კურსის არქივი</a></li>
+                            <li><a href="#" class="footer__link">პირველადი ინფორმაცია</a></li>
+                            <li><a href="#" class="footer__link">ხელშეკრულება</a></li>
+                            <li><a href="#" class="footer__link">არაპროფილური აქტივები</a></li>
+                            <li><a href="#" class="footer__link">მომხმარებლის დაცვა</a></li>
+                            <li><a href="#" class="footer__link">ტენდერი</a></li>
+                            <li><a href="#" class="footer__link">ანონიმური განცხადება</a></li>
+                            <li><a href="#" class="footer__link">ინფორმაციული უსაფრთხოების სახელმძღვანელო კლიენტებისთვის</a></li>
+                            <li><a href="#" class="footer__link">საკრედიტო ხელშეკრულებები</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav">
+                        <h2 class="footer__title">ბანკის შესახებ</h2>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">მიმოხილვა</a></li>
+                            <li><a href="#" class="footer__link">ჩვენი გუნდი</a></li>
+                            <li><a href="#" class="footer__link">ფინანსური მონაცემები</a></li>
+                            <li><a href="#" class="footer__link">ბანკის რეიტინგები</a></li>
+                            <li><a href="#" class="footer__link">ჩვენი პარტნიორები</a></li>
+                            <li><a href="#" class="footer__link">სიახლეები</a></li>
+                            <li><a href="#" class="footer__link">ვაკანსია</a></li>
+                            <li><a href="#" class="footer__link">კონტაქტი</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav">
+                        <h2 class="footer__title">იურიდიული პირები</h2>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">საოპერაციო მომსახურება</a></li>
+                            <li><a href="#" class="footer__link">სესხები</a></li>
+                            <li><a href="#" class="footer__link">დოკუმენტური ოპერაციები</a></li>
+                            <li><a href="#" class="footer__link">სახაზინო პროდუქტები</a></li>
+                            <li><a href="#" class="footer__link">ანაბრები</a></li>
+                            <li><a href="#" class="footer__link">პლასტიკური ბარათები</a></li>
+                            <li><a href="#" class="footer__link">ელექტრონული კომერცია</a></li>
+                            <li><a href="#" class="footer__link">დისტანციური მომსახურება</a></li>
+                            <li><a href="#" class="footer__link">სხვა</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav">
+                        <h2 class="footer__title">ფიზიკური პირები</h2>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">საოპერაციო მომსახურება</a></li>
+                            <li><a href="#" class="footer__link">პლასტიკური ბარათები</a></li>
+                            <li><a href="#" class="footer__link">სახაზინო პროდუქტები</a></li>
+                            <li><a href="#" class="footer__link">ანაბრები</a></li>
+                            <li><a href="#" class="footer__link">დისტანციური მომსახურება</a></li>
+                            <li><a href="#" class="footer__link">ფულადი გზავნილები</a></li>
+                            <li><a href="#" class="footer__link">სხვა</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
