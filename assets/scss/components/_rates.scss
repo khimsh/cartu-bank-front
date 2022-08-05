@@ -1,0 +1,36 @@
+.currency-rates {
+    display: grid;
+    row-gap: 1px;
+    width: 588.8px;
+
+    &__row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: #ffffff;
+        border-radius: 5px;
+
+        &--header {
+            & > * {
+                padding-block: 20px !important;
+                font-family: var(--ff-nino-mtavruli);
+                font-size: 16px;
+                font-weight: 700;
+                color: #1c5285 !important;
+            }
+        }
+
+        & > * {
+            align-items: center;
+            padding-block: 12px;
+            font-family: var(--ff-mrgvlovani-caps);
+            font-size: 14px;
+            color: #000000;
+            text-align: center;
+
+            &:not(:last-child) {
+                border-right: 1px solid #d8d8d8;
+            }
+        }
+    }
+}
