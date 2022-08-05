@@ -1,0 +1,109 @@
+.subscribe {
+    margin-top: 136px;
+    padding-bottom: 171px;
+
+    &__grid {
+        display: flex;
+        align-items: flex-end;
+        gap: 92px;
+
+        & > div {
+            max-width: 570px;
+            margin-right: 54px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        width: 588px;
+        height: 338px;
+        margin-left: 120px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: -33px;
+            width: 267px;
+            height: 221px;
+            background-color: #003d76;
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-family: var(--ff-nino-mtavruli);
+        font-size: 30px;
+        font-weight: 700;
+        color: #484848;
+    }
+
+    &__subtitle {
+        margin-bottom: 37px;
+        font-family: var(--ff-mrgvlovani);
+        font-size: 16px;
+        color: #757575;
+    }
+
+    &__form {
+        margin-bottom: 24px;
+        position: relative;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        padding-block: 15px;
+        padding-right: 130px;
+        font-family: var(--ff-mrgvlovani);
+        font-size: 16px;
+        color: #757575;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #707070;
+
+        &::placeholder {
+            font-family: inherit;
+            color: inherit;
+        }
+
+        &:focus {
+            outline: 0;
+            border-bottom-color: #003d76;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        width: 120px;
+        height: 40px;
+        display: grid;
+        place-content: center;
+        font-family: var(--ff-nino-mtavruli);
+        font-size: 14px;
+        font-weight: 700;
+        color: #757575;
+        background-color: #fff;
+        border: 1px solid #a39161;
+        transition: all 150ms ease-in-out;
+
+        &:hover,
+        &:focus {
+            outline: 0;
+            color: #fff;
+            background-color: #003d76;
+            border-color: #003d76;
+        }
+    }
+}
