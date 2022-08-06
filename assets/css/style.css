@@ -507,6 +507,116 @@ ol {
   border-right: 1px solid #d8d8d8;
 }
 
+.reports__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.report.active .report__btn {
+  background-color: #003d76;
+  border-color: #003d76;
+  border-bottom-color: #0361b9;
+  border-radius: 5px 5px 0 0;
+}
+.report.active .report__year {
+  color: #fff;
+}
+.report.active .report__icon::before, .report.active .report__icon::after {
+  background-color: #fff;
+}
+.report.active .report__icon::after {
+  transform: rotate(90deg);
+}
+.report.active .report__content {
+  max-height: 1000px;
+}
+.report__btn {
+  display: block;
+  width: 100%;
+  padding: 22px 30px;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+}
+.report__year {
+  font-family: var(--ff-nino-mtavruli);
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: capitalize;
+}
+.report__icon {
+  position: relative;
+}
+.report__icon::before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: -3px;
+  height: 6px;
+  width: 22px;
+  background-color: #000000;
+  border-radius: 2px;
+  transition: all 200ms ease-in-out;
+}
+.report__icon::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: -11px;
+  height: 22px;
+  width: 6px;
+  background-color: #000000;
+  border-radius: 2px;
+  transition: all 200ms ease-in-out;
+}
+.report__content {
+  background-color: #003d76;
+  border-radius: 0 0 5px 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 200ms ease-in-out;
+}
+.report__files {
+  margin: 0;
+  padding: 25px 30px !important;
+  list-style-type: none !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.report__link {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-decoration: none;
+}
+.report__file-icon {
+  color: #fff;
+  font-size: 30px;
+}
+.report__title {
+  margin: 0 !important;
+  font-family: var(--ff-nino-mtavruli);
+  font-size: 16px !important;
+  font-weight: 700;
+  color: #fff !important;
+  text-transform: capitalize;
+}
+.report__time {
+  margin-top: 6px;
+  font-family: var(--ff-nino-mtavruli);
+  font-size: 10px;
+  font-weight: 700;
+  color: #ecc173;
+  text-transform: capitalize;
+}
+
 .converter__tabs {
   margin-bottom: 25px;
   display: flex;
