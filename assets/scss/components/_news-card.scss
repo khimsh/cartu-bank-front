@@ -18,7 +18,9 @@
     }
 
     &__title {
+        margin-top: 0 !important;
         line-height: 1.2;
+
         a {
             font-family: var(--ff-nino-mtavruli);
             font-weight: 700;
