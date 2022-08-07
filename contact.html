@@ -285,7 +285,7 @@
                         <div class="contact text-flow">
                             <h2>ბანკომატები და სერვის ცენტრები</h2>
 
-                            <div>
+                            <div class="contact__filters">
                                 <select name="region" id="region">
                                     <option value="">რეგიონი</option>
                                     <option value="tbilisi">თბილისი</option>
@@ -337,12 +337,12 @@
                                 <li>თელავის სერვისცენტრი - ი. ჭავჭავაძის მოედანი, 2200</li>
                             </ul>
 
-                            <div>
+                            <div style="display: flex; gap: 18px">
                                 <h4>სამუშაო დღეები:</h4>
                                 <p>ორშაბათი-პარასკევი</p>
                             </div>
 
-                            <div>
+                            <div style="display: flex; gap: 18px">
                                 <h4>სამუშაო საათები:</h4>
                                 <p>10:00-18:00</p>
                             </div>
@@ -350,30 +350,30 @@
                             <form action="#" class="contact-form">
                                 <h3>უკუკავშირის ფორმა</h3>
 
-                                <div>
+                                <div class="contact-form__field">
                                     <input type="text" name="name" id="name" placeholder="სახელი, გვარი" />
                                 </div>
 
-                                <div>
-                                    <div>
+                                <div class="contact-form__flex">
+                                    <div class="contact-form__field" style="flex-basis: 50%">
                                         <input type="email" name="email" id="email" placeholder="ელ.ფოსტა" />
                                     </div>
-                                    <div>
+                                    <div class="contact-form__field" style="flex-basis: 50%">
                                         <input type="tel" name="tel" id="tel" placeholder="ტელეფონი" />
                                     </div>
                                 </div>
 
-                                <div>
+                                <div class="contact-form__field">
                                     <textarea name="message" id="message" placeholder="შეტყობინება"></textarea>
                                 </div>
 
-                                <div>
+                                <div class="contact-form__flex">
                                     <button type="submit">გაგზავნა</button>
 
-                                    <div>
+                                    <div class="contact-form__flex">
                                         <h4>გამოგვყევით:</h4>
 
-                                        <ul>
+                                        <ul class="social-menu">
                                             <li>
                                                 <a href="http://" target="_blank" rel="noopener noreferrer" aria-label="facebook">
                                                     <i class="fa-brands fa-facebook-f"></i>
@@ -394,7 +394,10 @@
                                 </div>
                             </form>
 
-                            <div class="map"></div>
+                            <div class="map">
+                                <!-- placeholder -->
+                                <img src="assets/images/Screenshot_1.png" alt="" />
+                            </div>
                         </div>
                     </main>
                 </div>
