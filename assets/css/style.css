@@ -787,6 +787,36 @@ ol {
   text-transform: capitalize;
 }
 
+.requisites h3 {
+  font-family: var(--ff-nino-mtavruli);
+  font-size: 18px;
+  font-weight: 700;
+  color: #a39161;
+  text-transform: uppercase;
+}
+.requisites__address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.requisites__item {
+  display: grid;
+  grid-template-columns: 23px auto;
+  column-gap: 20px;
+}
+.requisites p,
+.requisites a {
+  font-family: var(--ff-mrgvlovani);
+  font-size: 16px;
+  color: #040c23;
+  text-decoration: none;
+}
+.requisites i {
+  font-size: 22px;
+  color: #003d76;
+}
+
 .converter__tabs {
   margin-bottom: 25px;
   display: flex;
