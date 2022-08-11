@@ -287,6 +287,29 @@ ol {
   border-radius: 20px;
 }
 
+.kycb__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.kycb__link {
+  position: relative;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+  padding-left: 33px;
+}
+.kycb__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/globe.svg);
+  background-size: cover;
+}
+
 .nav > ul {
   display: flex;
   gap: 12px;
