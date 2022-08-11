@@ -691,6 +691,43 @@ ol {
   font-weight: 700;
 }
 
+.directorate__grid {
+  max-width: 940px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+  column-gap: 80px;
+  row-gap: 30px;
+}
+
+.directorate-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.directorate-member__image {
+  margin-bottom: 31px;
+  width: 172px;
+  height: 172px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.directorate-member__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.directorate-member__name {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #003d76;
+  text-align: center;
+}
+.directorate-member__position {
+  font-size: 10px;
+  color: #363636;
+  text-align: center;
+}
+
 .currency-rates {
   display: grid;
   row-gap: 1px;
