@@ -246,6 +246,32 @@ ol {
   color: #ecc173;
 }
 
+.board__grid {
+  max-width: 760px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  column-gap: 20px;
+  row-gap: 25px;
+}
+
+.board-member {
+  padding: 36px 34px;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px hsla(0deg, 0%, 0%, 0.16);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.board-member__name {
+  font-size: 16px;
+  color: #003d76;
+}
+.board-member__position {
+  font-size: 10px;
+  color: #363636;
+}
+
 .breadcrumbs {
   margin-bottom: 40px;
 }
