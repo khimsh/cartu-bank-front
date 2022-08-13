@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cartu Bank</title>
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- JS -->
+        <script src="assets/js/swiper-bundle.min.js" defer></script>
+        <script src="assets/js/script.js" defer></script>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="container">
+                <header class="header">
+                    <div class="header__logo">
+                        <a href="index.html" aria-label="ქართუ ბანკი">
+                            <img src="assets/images/BLUE.svg" alt="" />
+                        </a>
+                    </div>
+
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <div class="nav__dropdown">
+                                    <button class="dropdonw__trigger nav__btn">
+                                        <span>ბანკის შესახებ</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="nav__content">
+                                        <ul class="nav__list">
+                                            <li><a href="#" class="nav__link">მიმოხილვა</a></li>
+                                            <li><a href="#" class="nav__link">ჩვენი გუნდი</a></li>
+                                            <li><a href="#" class="nav__link">ფინანსური მონაცემები</a></li>
+                                            <li><a href="#" class="nav__link">ბანკის რეიტინგები</a></li>
+                                            <li><a href="#" class="nav__link">ჩვენი პარტნიორები</a></li>
+                                            <li><a href="#" class="nav__link">სიახლეები</a></li>
+                                            <li><a href="#" class="nav__link">ვაკანსია</a></li>
+                                            <li><a href="#" class="nav__link">კონტაქტი</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav__dropdown">
+                                    <button class="dropdonw__trigger nav__btn">
+                                        <span>იურიდიული პირები</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="nav__content">
+                                        <ul class="nav__list">
+                                            <li><a href="#" class="nav__link">საოპერაციო მომსახურება</a></li>
+                                            <li><a href="#" class="nav__link">სესხები</a></li>
+                                            <li><a href="#" class="nav__link">დოკუმენტური ოპერაციები</a></li>
+                                            <li><a href="#" class="nav__link">სახაზინო პროდუქტები</a></li>
+                                            <li><a href="#" class="nav__link">ანაბრები</a></li>
+                                            <li><a href="#" class="nav__link">პლასტიკური ბარათები</a></li>
+                                            <li><a href="#" class="nav__link">ელექტრონული კომერცია</a></li>
+                                            <li><a href="#" class="nav__link">დისტანციური მომსახურება</a></li>
+                                            <li><a href="#" class="nav__link">სხვა</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav__dropdown">
+                                    <button class="dropdonw__trigger nav__btn active">
+                                        <span>ფიზიკური პირები</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="nav__content">
+                                        <ul class="nav__list">
+                                            <li><a href="#" class="nav__link">საოპერაციო მომსახურება</a></li>
+                                            <li><a href="#" class="nav__link">პლასტიკური ბარათები</a></li>
+                                            <li><a href="#" class="nav__link">სახაზინო პროდუქტები</a></li>
+                                            <li><a href="#" class="nav__link">ანაბრები</a></li>
+                                            <li><a href="#" class="nav__link">დისტანციური მომსახურება</a></li>
+                                            <li><a href="#" class="nav__link">ფულადი გზავნილები</a></li>
+                                            <li><a href="#" class="nav__link">სხვა</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="nav__internet-bank-btn">ინტერნეტ ბანკი</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__search">
+                        <button class="header__search-btn" aria-label="ძიება">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <div class="header__lang">
+                        <a href="#">
+                            <img src="assets/images/gb-flag.png" alt="" />
+                        </a>
+                    </div>
+                </header>
+
+                <section class="banner banner--inner" style="background-image: url(assets/images/banner-individuals.jpg)"></section>
+
+                <div class="page-content">
+                    <aside class="side-menu">
+                        <h2 class="side-menu__title">ფიზიკური პირები</h2>
+
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#" class="side-menu__link">საოპერაციო მომსახურება</a>
+                                </li>
+
+                                <li>
+                                    <div class="side-menu__dropdown">
+                                        <button>
+                                            <span>პლასტიკური ბარათები</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="side-menu__content">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">VISA Classic / Mastercard Standard</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VISA Gold / Mastercard Gold</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VISA Platinum</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Visa Infinite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Mastercard World Elite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">E-card</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">საკრედიტო ბარათები VISA Infinite /Mastercard World Elite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">საბარათე ოპერაციების სავალუტო გაცვლითი კურსი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ინსტრუქციები</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="side-menu__dropdown">
+                                        <button>
+                                            <span>სახაზინო პროდუქტები</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="side-menu__content">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">კონვერტაციის კურსები და პირობები</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">სახელმწიფო ფასიანი ქაღალდების შეძენა</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="side-menu__dropdown">
+                                        <button>
+                                            <span>ანაბრები</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="side-menu__content">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">ვადიანი ანაბარი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ზრდადი ანაბარი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">მოთხოვნამდე ანაბარი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">საბავშვო ანაბარი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">საპროცენტო სადეპოზიტო სერტიფიკატი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">დისკონტური სადეპოზიტო სერტიფიკატი</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="side-menu__dropdown">
+                                        <button>
+                                            <span>დისტანციური მომსახურება</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="side-menu__content">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">ინტერნეტბანკი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">SMS მომსახურება</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">სატელეფონო მომსახურების ცენტრი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ავტომატური გადარიცხვები</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">მობაილბანკი</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="side-menu__dropdown">
+                                        <button>
+                                            <span>ფულადი გზავნილები</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="side-menu__content">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">ვესტერნ იუნიონი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ინტელექსპრესი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">იუნისტრიმი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ზოლოტაია კორონა</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">კონტაქტი</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="side-menu__dropdown">
+                                        <button>
+                                            <span>სხვა</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+
+                                        <div class="side-menu__content">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">ესქრო ანგარიში</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ინკასაცია</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ინდივიდუალური სეიფები</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ანაბრით უზრუნველყოფილი სესხი</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ანგარიშებზე თანხის შეტანა სწრაფი გადახდის აპარატებით.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <main>
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li>
+                                    <a href="#">მთავარი</a>
+                                </li>
+                                <li>
+                                    <a href="#">ფიზიკური პირები</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="">
+                            <h2 class="page-title">ფიზიკური პირები - ჩარჩო</h2>
+
+                            <div class="">
+                                <!-- page content -->
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__grid">
+                    <div>
+                        <img src="assets/images/BLUE.svg" alt="" />
+                        <ul class="social-menu social-menu--footer">
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <p class="footer__copy">Copyright © 2022 Cartu Bank</p>
+                        <p class="footer__copy">Created by <a href="http://" target="_blank" rel="noopener noreferrer">Proservice</a></p>
+                    </div>
+
+                    <div class="footer__nav">
+                        <h2 class="footer__title">საჭირო ბმულები</h2>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">ვალუტის კურსის არქივი</a></li>
+                            <li><a href="#" class="footer__link">პირველადი ინფორმაცია</a></li>
+                            <li><a href="#" class="footer__link">ხელშეკრულება</a></li>
+                            <li><a href="#" class="footer__link">არაპროფილური აქტივები</a></li>
+                            <li><a href="#" class="footer__link">მომხმარებლის დაცვა</a></li>
+                            <li><a href="#" class="footer__link">ტენდერი</a></li>
+                            <li><a href="#" class="footer__link">ანონიმური განცხადება</a></li>
+                            <li><a href="#" class="footer__link">ინფორმაციული უსაფრთხოების სახელმძღვანელო კლიენტებისთვის</a></li>
+                            <li><a href="#" class="footer__link">საკრედიტო ხელშეკრულებები</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav">
+                        <h2 class="footer__title">ბანკის შესახებ</h2>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">მიმოხილვა</a></li>
+                            <li><a href="#" class="footer__link">ჩვენი გუნდი</a></li>
+                            <li><a href="#" class="footer__link">ფინანსური მონაცემები</a></li>
+                            <li><a href="#" class="footer__link">ბანკის რეიტინგები</a></li>
+                            <li><a href="#" class="footer__link">ჩვენი პარტნიორები</a></li>
+                            <li><a href="#" class="footer__link">სიახლეები</a></li>
+                            <li><a href="#" class="footer__link">ვაკანსია</a></li>
+                            <li><a href="#" class="footer__link">კონტაქტი</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav">
+                        <h2 class="footer__title">იურიდიული პირები</h2>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">საოპერაციო მომსახურება</a></li>
+                            <li><a href="#" class="footer__link">სესხები</a></li>
+                            <li><a href="#" class="footer__link">დოკუმენტური ოპერაციები</a></li>
+                            <li><a href="#" class="footer__link">სახაზინო პროდუქტები</a></li>
+                            <li><a href="#" class="footer__link">ანაბრები</a></li>
+                            <li><a href="#" class="footer__link">პლასტიკური ბარათები</a></li>
+                            <li><a href="#" class="footer__link">ელექტრონული კომერცია</a></li>
+                            <li><a href="#" class="footer__link">დისტანციური მომსახურება</a></li>
+                            <li><a href="#" class="footer__link">სხვა</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav">
+                        <h2 class="footer__title">ფიზიკური პირები</h2>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">საოპერაციო მომსახურება</a></li>
+                            <li><a href="#" class="footer__link">პლასტიკური ბარათები</a></li>
+                            <li><a href="#" class="footer__link">სახაზინო პროდუქტები</a></li>
+                            <li><a href="#" class="footer__link">ანაბრები</a></li>
+                            <li><a href="#" class="footer__link">დისტანციური მომსახურება</a></li>
+                            <li><a href="#" class="footer__link">ფულადი გზავნილები</a></li>
+                            <li><a href="#" class="footer__link">სხვა</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
