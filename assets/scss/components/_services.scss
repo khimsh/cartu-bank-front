@@ -14,6 +14,16 @@
         background-color: #e8edf3;
     }
 
+    &__list {
+        padding: 0 !important;
+        list-style-type: none !important;
+
+        ul {
+            padding: 0 !important;
+            list-style-type: none !important;
+        }
+    }
+
     &__bordered-listing {
         min-width: 627px;
         margin-bottom: 35px;

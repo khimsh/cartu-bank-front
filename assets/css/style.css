@@ -1066,6 +1066,7 @@ li a:focus {
 }
 
 .deposit-calculator {
+  margin-top: 50px;
   padding: 38px 40px 45px 30px;
   background: #f9f9f9 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
@@ -1082,14 +1083,17 @@ li a:focus {
   position: relative;
 }
 .deposit-calculator__title {
+  margin-top: 0 !important;
   margin-bottom: 23px;
   font-size: 16px;
   color: #003d76;
 }
 .deposit-calculator label {
+  display: block;
   margin-bottom: 16px;
   font-size: 14px;
   color: #030303;
+  line-height: 1;
 }
 .deposit-calculator input,
 .deposit-calculator select {
@@ -1541,6 +1545,9 @@ li a:focus {
   flex-direction: column;
   gap: 16px;
 }
+.footer__list li {
+  line-height: 1;
+}
 .footer__link {
   font-family: var(--ff-nino-mtavruli);
   font-size: 14px;
@@ -1572,6 +1579,14 @@ li a:focus {
   font-size: 20px;
   color: #003d76;
   background-color: #e8edf3;
+}
+.services__list {
+  padding: 0 !important;
+  list-style-type: none !important;
+}
+.services__list ul {
+  padding: 0 !important;
+  list-style-type: none !important;
 }
 .services__bordered-listing {
   min-width: 627px;
