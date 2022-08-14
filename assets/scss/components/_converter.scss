@@ -18,12 +18,25 @@
             padding: 12px 37px 10px 38px;
             background-color: #1c5285;
         }
+
+        &--alt {
+            color: #003d76;
+            &.active {
+                color: #fff;
+                background-color: #a39161;
+            }
+        }
     }
 
     &__content {
         display: flex;
         align-items: center;
         gap: 30px;
+
+        &--vertical {
+            flex-direction: column;
+            gap: 16px;
+        }
     }
 
     &__input {

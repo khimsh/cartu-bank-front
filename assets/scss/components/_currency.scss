@@ -8,6 +8,10 @@
     border-radius: 20px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
+    &--alt {
+        background-color: #e8edf3;
+    }
+
     &__title {
         margin-bottom: 27px;
         font-family: var(--ff-nino-mtavruli);
