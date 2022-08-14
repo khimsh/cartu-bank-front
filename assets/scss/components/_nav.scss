@@ -7,6 +7,23 @@
 
     &__dropdown {
         position: relative;
+
+        &.active {
+            .nav__content {
+                transform: scaleY(1);
+            }
+
+            .dropdonw__trigger {
+                background-color: #003d76;
+                span {
+                    color: #fff;
+                }
+                i {
+                    color: #fff;
+                    transform: translateY(-50%) rotate(180deg);
+                }
+            }
+        }
     }
 
     &__btn {
@@ -17,11 +34,17 @@
         padding-right: 44px;
         border-radius: 5px;
         text-decoration: none;
+        transition: all 200ms ease-in-out;
 
-        &:hover,
-        &:focus {
+        &:hover {
+            background-color: #003d76;
+
             span {
-                color: #000000;
+                color: #fff;
+            }
+
+            i {
+                color: #fff;
             }
         }
 
@@ -42,7 +65,8 @@
             font-size: 20px;
             font-weight: 700;
             color: #003d76;
-            transition: color 150ms ease-in-out;
+            transition: all 150ms ease-in-out;
+            pointer-events: none;
         }
 
         i {
@@ -51,14 +75,17 @@
             right: 14px;
             transform: translateY(-50%);
             color: hsl(0 0% 0% / 0.18);
+            transition: all 150ms ease-in-out;
+            pointer-events: none;
         }
     }
 
     &__content {
         position: absolute;
         width: 100%;
-        max-height: 0;
-        overflow: hidden;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all 200ms ease-in-out;
     }
 
     &__list {
@@ -76,12 +103,17 @@
         }
     }
 
+    &__item {
+        line-height: 1;
+    }
+
     &__link {
         display: block;
         font-family: var(--ff-nino-mtavruli);
         font-size: 12px;
         font-weight: 700;
         color: #000000;
+        line-height: 1;
         text-decoration: none;
         transition: color 150ms ease-in-out;
 
@@ -102,6 +134,12 @@
         text-decoration: none;
         background-color: #1c5285;
         padding: 0 18px;
-        border-radius: 5px;
+        border-radius: 7px;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            color: #fff;
+            background-color: #a39161;
+        }
     }
 }

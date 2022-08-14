@@ -109,7 +109,7 @@ li a:focus {
   position: relative;
   padding-top: 13px;
 }
-.page-wrapper::before {
+.page-wrapper--top::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -120,7 +120,7 @@ li a:focus {
   background-image: linear-gradient(to bottom, #ececec, rgba(246, 246, 246, 0.49));
   clip-path: polygon(0 0, 0% 100%, 100% 0);
 }
-.page-wrapper::after {
+.page-wrapper--bottom::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -322,6 +322,7 @@ li a:focus {
 }
 
 .header {
+  position: relative;
   margin-bottom: 20px;
   height: 116px;
   padding-inline: 20px;
@@ -330,6 +331,67 @@ li a:focus {
   align-items: center;
   background-color: #ffffff;
   border-radius: 20px;
+}
+.header__search-btn {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  color: #000000;
+}
+.header__search-btn i {
+  pointer-events: none;
+}
+.header__search-form {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 30px 20px;
+  bottom: -96px;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.header__search-form.active {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.header__search-form form {
+  display: flex;
+  gap: 10px;
+}
+.header__search-form input {
+  flex: 1;
+  height: 50px;
+  padding: 0 20px;
+  background-color: #f8f8f8;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+}
+.header__search-form input::placeholder {
+  color: #9f9f9f;
+}
+.header__search-form button {
+  height: 50px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #1c5285;
+  border: 0;
+  border-radius: 5px;
+  padding-inline: 20px;
+  transition: all 200ms ease-in-out;
+}
+.header__search-form button:hover, .header__search-form button:focus {
+  background-color: #a39161;
 }
 
 .kycb__list {
@@ -363,6 +425,19 @@ li a:focus {
 .nav__dropdown {
   position: relative;
 }
+.nav__dropdown.active .nav__content {
+  transform: scaleY(1);
+}
+.nav__dropdown.active .dropdonw__trigger {
+  background-color: #003d76;
+}
+.nav__dropdown.active .dropdonw__trigger span {
+  color: #fff;
+}
+.nav__dropdown.active .dropdonw__trigger i {
+  color: #fff;
+  transform: translateY(-50%) rotate(180deg);
+}
 .nav__btn {
   position: relative;
   background-color: transparent;
@@ -371,9 +446,16 @@ li a:focus {
   padding-right: 44px;
   border-radius: 5px;
   text-decoration: none;
+  transition: all 200ms ease-in-out;
 }
-.nav__btn:hover span, .nav__btn:focus span {
-  color: #000000;
+.nav__btn:hover {
+  background-color: #003d76;
+}
+.nav__btn:hover span {
+  color: #fff;
+}
+.nav__btn:hover i {
+  color: #fff;
 }
 .nav__btn.active {
   background-color: #003d76;
@@ -389,7 +471,8 @@ li a:focus {
   font-size: 20px;
   font-weight: 700;
   color: #003d76;
-  transition: color 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  pointer-events: none;
 }
 .nav__btn i {
   position: absolute;
@@ -397,12 +480,15 @@ li a:focus {
   right: 14px;
   transform: translateY(-50%);
   color: hsla(0deg, 0%, 0%, 0.18);
+  transition: all 150ms ease-in-out;
+  pointer-events: none;
 }
 .nav__content {
   position: absolute;
   width: 100%;
-  max-height: 0;
-  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 200ms ease-in-out;
 }
 .nav__list {
   padding-inline: 20px;
@@ -419,12 +505,16 @@ li a:focus {
     gap: 20px;
   }
 }
+.nav__item {
+  line-height: 1;
+}
 .nav__link {
   display: block;
   font-family: var(--ff-nino-mtavruli);
   font-size: 12px;
   font-weight: 700;
   color: #000000;
+  line-height: 1;
   text-decoration: none;
   transition: color 150ms ease-in-out;
 }
@@ -442,7 +532,12 @@ li a:focus {
   text-decoration: none;
   background-color: #1c5285;
   padding: 0 18px;
-  border-radius: 5px;
+  border-radius: 7px;
+  transition: all 200ms ease-in-out;
+}
+.nav__internet-bank-btn:hover {
+  color: #fff;
+  background-color: #a39161;
 }
 
 .banner {
