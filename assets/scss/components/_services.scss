@@ -37,4 +37,43 @@
             margin-top: 20px;
         }
     }
+
+    &__table {
+        font-size: 14px;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        tr {
+            &:nth-child(2) {
+                th:nth-child(2n) {
+                    border-right: 0;
+                }
+            }
+        }
+
+        th,
+        td {
+            padding-block: 24px;
+            border-bottom: 1px solid #707070;
+            border-right: 1px solid #707070;
+        }
+
+        th {
+            font-weight: 400;
+
+            &:first-child {
+                text-align: left;
+            }
+        }
+
+        td {
+            &:not(:first-child) {
+                text-align: center;
+            }
+        }
+    }
 }

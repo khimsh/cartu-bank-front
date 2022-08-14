@@ -18,6 +18,7 @@ h4 {
     font-family: var(--ff-nino-mtavruli);
     font-weight: 700;
     text-transform: uppercase;
+    color: #030303;
 }
 
 img {
@@ -33,6 +34,26 @@ button {
 ul,
 ol {
     list-style-type: none;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+p,
+li {
+    a {
+        color: #2080d9;
+        text-decoration: none;
+        transition: all 150ms ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: #003d76;
+        }
+    }
 }
 
 .page-wrapper {
@@ -93,7 +114,6 @@ ol {
     h3 {
         margin-top: 50px;
         font-size: 18px;
-        color: #000000;
     }
 
     ul {

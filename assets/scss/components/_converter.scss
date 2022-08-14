@@ -129,3 +129,113 @@
         text-align: left;
     }
 }
+
+.deposit-calculator {
+    padding: 38px 40px 45px 30px;
+    background: #f9f9f9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    &__group {
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 23px;
+        font-size: 16px;
+        color: #003d76;
+    }
+
+    label {
+        margin-bottom: 16px;
+        font-size: 14px;
+        color: #030303;
+    }
+
+    input,
+    select {
+        height: 50px;
+        font-family: inherit;
+        background-color: #fff;
+        border: 1px solid #ececec;
+        border-radius: 5px;
+        padding-inline: 10px;
+        color: #9f9f9f;
+
+        &:focus {
+            outline-color: #003d76;
+        }
+    }
+
+    input {
+        &::placeholder {
+            color: #9f9f9f;
+        }
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+
+    input[name='amount'] {
+        width: 130px;
+    }
+
+    input[name='percentage'] {
+        width: 237px;
+        padding-right: 63px;
+    }
+
+    select[name='withdrawal'] {
+        width: 275px;
+    }
+
+    select[name='term'] {
+        width: 131px;
+    }
+
+    select[name='currency'] {
+        width: 109px;
+    }
+
+    &__hint {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 53px;
+        height: 50px;
+        display: grid;
+        place-content: center;
+        color: #fff;
+        background: #003d76;
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    &__btn {
+        margin-top: 25px;
+        margin-left: auto;
+        width: 237px;
+        height: 50px;
+        display: block;
+        font-family: var(--ff-nino-mtavruli);
+        font-size: 16px;
+        color: #ffffff;
+        background: #003d76 0% 0% no-repeat padding-box;
+        border: 0;
+        border-radius: 5px;
+    }
+}
