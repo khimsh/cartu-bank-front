@@ -425,16 +425,16 @@ li a:focus {
 .nav__dropdown {
   position: relative;
 }
-.nav__dropdown.active .nav__content {
+.nav__dropdown:hover .nav__content {
   transform: scaleY(1);
 }
-.nav__dropdown.active .dropdonw__trigger {
+.nav__dropdown:hover .dropdonw__trigger {
   background-color: #003d76;
 }
-.nav__dropdown.active .dropdonw__trigger span {
+.nav__dropdown:hover .dropdonw__trigger span {
   color: #fff;
 }
-.nav__dropdown.active .dropdonw__trigger i {
+.nav__dropdown:hover .dropdonw__trigger i {
   color: #fff;
   transform: translateY(-50%) rotate(180deg);
 }
@@ -447,15 +447,6 @@ li a:focus {
   border-radius: 5px;
   text-decoration: none;
   transition: all 200ms ease-in-out;
-}
-.nav__btn:hover {
-  background-color: #003d76;
-}
-.nav__btn:hover span {
-  color: #fff;
-}
-.nav__btn:hover i {
-  color: #fff;
 }
 .nav__btn.active {
   background-color: #003d76;

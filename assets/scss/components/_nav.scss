@@ -8,7 +8,7 @@
     &__dropdown {
         position: relative;
 
-        &.active {
+        &:hover {
             .nav__content {
                 transform: scaleY(1);
             }
@@ -35,18 +35,6 @@
         border-radius: 5px;
         text-decoration: none;
         transition: all 200ms ease-in-out;
-
-        &:hover {
-            background-color: #003d76;
-
-            span {
-                color: #fff;
-            }
-
-            i {
-                color: #fff;
-            }
-        }
 
         &.active {
             background-color: #003d76;

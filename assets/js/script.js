@@ -33,19 +33,19 @@
     reportAccordion()
 
     // Header Nav Dropdowns
-    function headerDropdown() {
-        if (!document.querySelector('.nav')) return
+    // function headerDropdown() {
+    //     if (!document.querySelector('.nav')) return
 
-        const dropdowns = document.querySelectorAll('.nav__dropdown')
+    //     const dropdowns = document.querySelectorAll('.nav__dropdown')
 
-        dropdowns.forEach((dropdown) => {
-            const btn = dropdown.querySelector('.dropdonw__trigger')
-            btn.addEventListener('click', () => {
-                dropdown.classList.toggle('active')
-            })
-        })
-    }
-    headerDropdown()
+    //     dropdowns.forEach((dropdown) => {
+    //         const btn = dropdown.querySelector('.dropdonw__trigger')
+    //         btn.addEventListener('click', () => {
+    //             dropdown.classList.toggle('active')
+    //         })
+    //     })
+    // }
+    // headerDropdown()
 
     // Open Search Field
     function headerSearchForm() {
@@ -71,12 +71,12 @@
         }
 
         // Remove search form
-        if (!e.target.matches('.dropdonw__trigger, .nav__content, .nav__content *')) {
-            const dropdowns = document.querySelectorAll('.nav__dropdown')
+        // if (!e.target.matches('.dropdonw__trigger, .nav__content, .nav__content *')) {
+        //     const dropdowns = document.querySelectorAll('.nav__dropdown')
 
-            dropdowns.forEach((dropdown) => {
-                dropdown.classList.remove('active')
-            })
-        }
+        //     dropdowns.forEach((dropdown) => {
+        //         dropdown.classList.remove('active')
+        //     })
+        // }
     })
 })()
