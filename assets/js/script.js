@@ -60,6 +60,24 @@
     }
     headerSearchForm()
 
+    // Side menu dropdowns
+    function sidebarDropdown() {
+        if (!document.querySelector('.side-menu__dropdown')) return
+
+        const dropdowns = document.querySelectorAll('.side-menu__dropdown')
+
+        dropdowns.forEach((dropdown) => {
+            const btn = dropdown.querySelector('.side-menu__btn')
+
+            btn.addEventListener('click', () => {
+                dropdowns.forEach((dropdown) => dropdown.classList.remove('active'))
+
+                dropdown.classList.toggle('active')
+            })
+        })
+    }
+    sidebarDropdown()
+
     // Remove active class from dom elements on outside click
     document.addEventListener('click', (e) => {
         // Remove search form
@@ -69,11 +87,9 @@
                 searchForm.classList.remove('active')
             }
         }
-
         // Remove search form
         // if (!e.target.matches('.dropdonw__trigger, .nav__content, .nav__content *')) {
         //     const dropdowns = document.querySelectorAll('.nav__dropdown')
-
         //     dropdowns.forEach((dropdown) => {
         //         dropdown.classList.remove('active')
         //     })
