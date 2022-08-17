@@ -1,3 +1,5 @@
+@use 'config' as *;
+
 *,
 *::before,
 *::after {
@@ -59,6 +61,11 @@ li {
 .page-wrapper {
     position: relative;
     padding-top: 13px;
+    transition: all 200ms ease-in-out;
+
+    @media (max-width: $md-tablet) {
+        padding-top: 0;
+    }
 
     &--top {
         &::before {
@@ -95,6 +102,10 @@ li {
     gap: 30px;
     align-items: start;
     padding-bottom: 165px;
+
+    @media (max-width: $md-tablet) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .text-flow {

@@ -95,4 +95,65 @@
         //     })
         // }
     })
+
+    // Mobile Menu
+    function mobileMenu() {
+        if (!document.querySelector('.mobile-menu')) return
+
+        const openMenuBtn = document.querySelector('.header-mobile__burger')
+        const body = document.querySelector('body')
+        const menuContainer = document.querySelector('.mobile-menu')
+
+        openMenuBtn.addEventListener('click', () => {
+            body.classList.toggle('menu-open')
+            menuContainer.classList.toggle('open')
+
+            if (menuContainer.classList.contains('open')) {
+                openMenuBtn.innerHTML = `<i class="fa-solid fa-xmark"></i>`
+            } else {
+                openMenuBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`
+            }
+        })
+    }
+
+    mobileMenu()
+
+    // Mobile Menu dropdown
+    function mobileMenuDropdown() {
+        if (!document.querySelector('.mobile-menu__dropdown')) return
+
+        const dropdowns = document.querySelectorAll('.mobile-menu__dropdown')
+
+        dropdowns.forEach((dropdown) => {
+            const btn = dropdown.querySelector('.mobile-menu__btn')
+
+            btn.addEventListener('click', () => {
+                dropdowns.forEach((dropdown) => dropdown.classList.remove('active'))
+
+                dropdown.classList.toggle('active')
+            })
+        })
+    }
+
+    mobileMenuDropdown()
+
+    // Set active side menu on mobile
+    function activeSideMenu() {
+        if (!document.querySelector('.mobile-menu')) return
+
+        const btns = document.querySelectorAll('.header-mobile__btn')
+        const menus = document.querySelectorAll('.mobile-menu__section')
+
+        btns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btns.forEach((btn) => btn.classList.remove('active'))
+                menus.forEach((menu) => menu.classList.remove('active'))
+                const btnTarget = btn.dataset.target
+                document.querySelector(`${btnTarget}`).classList.add('active')
+                btn.classList.add('active')
+            })
+        })
+    }
+
+    activeSideMenu()
 })()

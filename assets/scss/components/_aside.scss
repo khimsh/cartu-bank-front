@@ -1,9 +1,15 @@
+@use '../base/config' as *;
+
 .side-menu {
     padding-bottom: 30px;
     background-color: #174e82;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+    @media (max-width: $md-tablet) {
+        display: none;
+    }
 
     &__title {
         padding-block: 12px;
