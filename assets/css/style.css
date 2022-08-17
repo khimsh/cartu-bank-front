@@ -544,6 +544,11 @@ li a:focus {
   background-color: transparent;
   border: 0;
 }
+@media (max-width: 560px) {
+  .header-mobile__btn {
+    font-size: 12px;
+  }
+}
 .header-mobile__btn.active {
   color: #fff;
   background-color: #1c5285;
