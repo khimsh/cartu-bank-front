@@ -546,7 +546,7 @@ li a:focus {
 }
 @media (max-width: 560px) {
   .header-mobile__btn {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 .header-mobile__btn.active {

@@ -143,13 +143,21 @@
 
         const btns = document.querySelectorAll('.header-mobile__btn')
         const menus = document.querySelectorAll('.mobile-menu__section')
+        const openMenuBtn = document.querySelector('.header-mobile__burger')
+        const menuContainer = document.querySelector('.mobile-menu')
+        const body = document.querySelector('body')
 
         btns.forEach((btn) => {
             btn.addEventListener('click', () => {
-                btns.forEach((btn) => btn.classList.remove('active'))
-                menus.forEach((menu) => menu.classList.remove('active'))
                 const btnTarget = btn.dataset.target
+
+                btns.forEach((btn) => btn.classList.remove('active'))
+
+                menus.forEach((menu) => menu.classList.remove('active'))
                 document.querySelector(`${btnTarget}`).classList.add('active')
+                body.classList.add('menu-open')
+                menuContainer.classList.add('open')
+                openMenuBtn.innerHTML = `<i class="fa-solid fa-xmark"></i>`
                 btn.classList.add('active')
             })
         })
