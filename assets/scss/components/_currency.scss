@@ -8,6 +8,15 @@
     border-radius: 20px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
+    @media (max-width: 1080px) {
+        flex-direction: column;
+        padding: 30px;
+
+        & > div:nth-child(1) {
+            width: 100%;
+        }
+    }
+
     &--alt {
         background-color: #e8edf3;
     }
@@ -35,5 +44,17 @@
             font-size: 14px;
             font-weight: 700;
         }
+    }
+}
+
+.currency-converter {
+    width: 100%;
+
+    @media (max-width: 1399px) {
+        max-width: 520px;
+    }
+
+    @media (max-width: 1080px) {
+        max-width: unset;
     }
 }
