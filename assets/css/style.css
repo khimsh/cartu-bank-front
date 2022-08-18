@@ -1131,12 +1131,27 @@ li a:focus {
     font-size: 12px;
   }
 }
+@media (max-width: 520px) {
+  .currency-rates__row--header > * {
+    font-size: 10px;
+  }
+}
 .currency-rates__row > * {
   align-items: center;
   padding-block: 12px;
   font-family: var(--ff-mrgvlovani-caps);
   color: #000000;
   text-align: center;
+}
+@media (max-width: 1100px) {
+  .currency-rates__row > * {
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px) {
+  .currency-rates__row > * {
+    font-size: 10px;
+  }
 }
 .currency-rates__row > *:not(:last-child) {
   border-right: 1px solid #d8d8d8;
@@ -1556,7 +1571,8 @@ li a:focus {
   right: -100%;
   bottom: 0;
   width: 80%;
-  min-height: 100vh;
+  min-height: 100%;
+  height: auto;
   background-color: #1c5285;
   transition: all 200ms ease-in-out;
   display: none;

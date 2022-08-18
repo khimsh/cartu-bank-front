@@ -32,6 +32,9 @@
                 @media (max-width: $md-tablet) {
                     font-size: 12px;
                 }
+                @media (max-width: 520px) {
+                    font-size: 10px;
+                }
             }
         }
 
@@ -41,6 +44,13 @@
             font-family: var(--ff-mrgvlovani-caps);
             color: #000000;
             text-align: center;
+
+            @media (max-width: $md-tablet) {
+                font-size: 12px;
+            }
+            @media (max-width: 520px) {
+                font-size: 10px;
+            }
 
             &:not(:last-child) {
                 border-right: 1px solid #d8d8d8;
