@@ -58,12 +58,27 @@
 
     &--inner {
         height: 250px;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+
+        @media (max-width: $md-tablet) {
+            height: 200px;
+        }
+
+        @media (max-width: 520px) {
+            height: 160px;
+            margin-bottom: 20px;
+        }
     }
 
     &--about {
         padding-inline: 65px;
         display: flex;
         align-items: center;
+
+        @media (max-width: $md-tablet) {
+            padding-inline: 16px;
+        }
 
         & > * {
             line-height: 1 !important;
@@ -83,6 +98,10 @@
 
         @media (max-width: 1080px) {
             font-size: 28px;
+        }
+
+        @media (max-width: 520px) {
+            font-size: 22px;
         }
 
         &--sm {
