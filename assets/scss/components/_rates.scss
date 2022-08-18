@@ -1,8 +1,14 @@
+@use '../base/config' as *;
+
 .currency-rates {
     display: grid;
     row-gap: 1px;
     min-width: 588.8px;
     font-size: 14px;
+
+    @media (max-width: $md-tablet) {
+        min-width: unset;
+    }
 
     &--smaller {
         font-size: 12px;
@@ -22,6 +28,10 @@
                 font-size: 16px;
                 font-weight: 700;
                 color: #1c5285 !important;
+
+                @media (max-width: $md-tablet) {
+                    font-size: 12px;
+                }
             }
         }
 

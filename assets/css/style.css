@@ -814,6 +814,11 @@ li a:focus {
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 520px) {
+  .store-options {
+    flex-direction: column;
+  }
+}
 
 .store-btn {
   width: 176px;
@@ -827,6 +832,12 @@ li a:focus {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   transition: all 200ms ease-in-out;
+}
+@media (max-width: 1100px) {
+  .store-btn {
+    width: 160px;
+    height: 50px;
+  }
 }
 .store-btn--google-play {
   background-color: #a39161;
@@ -1093,6 +1104,11 @@ li a:focus {
   min-width: 588.8px;
   font-size: 14px;
 }
+@media (max-width: 1100px) {
+  .currency-rates {
+    min-width: unset;
+  }
+}
 .currency-rates--smaller {
   font-size: 12px;
 }
@@ -1109,6 +1125,11 @@ li a:focus {
   font-size: 16px;
   font-weight: 700;
   color: #1c5285 !important;
+}
+@media (max-width: 1100px) {
+  .currency-rates__row--header > * {
+    font-size: 12px;
+  }
 }
 .currency-rates__row > * {
   align-items: center;
@@ -1325,6 +1346,12 @@ li a:focus {
   .converter__content {
     flex-direction: row;
     align-items: center;
+  }
+}
+@media (max-width: 680px) {
+  .converter__content {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 .converter__content--vertical {
@@ -1594,10 +1621,33 @@ li a:focus {
 .mobile-menu__btn:hover {
   color: #fff;
 }
+.mobile-menu__lang a {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.mobile-menu__lang span {
+  transform: translateY(2px);
+}
+.mobile-menu__lang img {
+  flex-shrink: 0;
+}
 
 .news {
   margin-top: 60px;
   margin-bottom: 84px;
+}
+@media (max-width: 1100px) {
+  .news {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 .news__title {
   margin-bottom: 62px;
@@ -1607,12 +1657,22 @@ li a:focus {
   color: #000;
   text-align: center;
 }
+@media (max-width: 1100px) {
+  .news__title {
+    margin-bottom: 30px;
+  }
+}
 .news__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   justify-content: space-between;
   column-gap: 30px;
   row-gap: 50px;
+}
+@media (max-width: 520px) {
+  .news__grid {
+    grid-template-columns: 1fr;
+  }
 }
 .news__link {
   margin-top: 66px;
@@ -1704,6 +1764,11 @@ li a:focus {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+@media (max-width: 520px) {
+  .news-card {
+    flex-direction: column;
+  }
 }
 .news-card__image {
   flex-shrink: 0;
@@ -1846,6 +1911,11 @@ li a:focus {
   margin-top: 100px;
   margin-bottom: 80px;
 }
+@media (max-width: 1100px) {
+  .products {
+    margin-top: 50px;
+  }
+}
 .products__title {
   margin-bottom: 80px;
   font-family: var(--ff-nino-mtavruli);
@@ -1854,12 +1924,28 @@ li a:focus {
   color: #000;
   text-align: center;
 }
+@media (max-width: 1100px) {
+  .products__title {
+    margin-bottom: 30px;
+  }
+}
 .products__grid {
   padding-inline: 137px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(323px, 1fr));
   justify-content: space-between;
   gap: 60px;
+}
+@media (max-width: 1100px) {
+  .products__grid {
+    padding-inline: 16px;
+  }
+}
+@media (max-width: 520px) {
+  .products__grid {
+    grid-template-columns: 1fr;
+    padding-inline: 0;
+  }
 }
 
 .product-card__link {
@@ -1877,6 +1963,11 @@ li a:focus {
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
+@media (max-width: 520px) {
+  .product-card__link {
+    padding: 16px;
+  }
+}
 .product-card__link:hover, .product-card__link:focus {
   --title-clr: #fff;
   --text-clr: #fff;
@@ -1890,6 +1981,12 @@ li a:focus {
   display: flex;
   align-items: center;
   gap: 34px;
+}
+@media (max-width: 520px) {
+  .product-card__header {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
 }
 .product-card__icon {
   position: relative;
@@ -1932,6 +2029,11 @@ li a:focus {
   font-weight: 700;
   color: var(--title-clr);
 }
+@media (max-width: 520px) {
+  .product-card__title {
+    font-size: 16px;
+  }
+}
 .product-card__body {
   font-family: var(--ff-mrgvlovani);
   font-size: 12px;
@@ -1943,6 +2045,11 @@ li a:focus {
   justify-content: flex-end;
   align-items: center;
   gap: 5px;
+}
+@media (max-width: 520px) {
+  .product-card__cta {
+    margin-top: 20px;
+  }
 }
 .product-card__cta span {
   font-family: "BPG Mrgvlovani Caps 2010";
@@ -2112,6 +2219,16 @@ li a:focus {
 .index-slider {
   height: 537px;
 }
+@media (max-width: 1440px) {
+  .index-slider {
+    height: 420px;
+  }
+}
+@media (max-width: 1100px) {
+  .index-slider {
+    height: 320px;
+  }
+}
 .index-slider__slide {
   position: relative;
   height: 100%;
@@ -2139,7 +2256,7 @@ li a:focus {
 }
 .index-slider__title {
   font-family: var(--ff-nino-mtavruli);
-  font-size: 55px;
+  font-size: clamp(20px, 2vw + 1rem, 55px);
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -2179,20 +2296,42 @@ li a:focus {
   margin-top: 136px;
   padding-bottom: 171px;
 }
+@media (max-width: 1100px) {
+  .subscribe {
+    margin-top: 40px;
+    padding-bottom: 50px;
+  }
+}
 .subscribe__grid {
   display: flex;
   align-items: flex-end;
   gap: 92px;
 }
+@media (max-width: 1100px) {
+  .subscribe__grid {
+    justify-content: center;
+  }
+}
 .subscribe__grid > div {
   max-width: 570px;
   margin-right: 54px;
+}
+@media (max-width: 1100px) {
+  .subscribe__grid > div {
+    max-width: unset;
+    margin-right: unset;
+  }
 }
 .subscribe__image {
   position: relative;
   width: 588px;
   height: 338px;
   margin-left: 120px;
+}
+@media (max-width: 1100px) {
+  .subscribe__image {
+    display: none;
+  }
 }
 .subscribe__image::before {
   content: "";
@@ -2218,15 +2357,31 @@ li a:focus {
   font-weight: 700;
   color: #484848;
 }
+@media (max-width: 520px) {
+  .subscribe__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
 .subscribe__subtitle {
   margin-bottom: 37px;
   font-family: var(--ff-mrgvlovani);
   font-size: 16px;
   color: #757575;
 }
+@media (max-width: 520px) {
+  .subscribe__subtitle {
+    font-size: 12px;
+  }
+}
 .subscribe__form {
   margin-bottom: 24px;
   position: relative;
+}
+@media (max-width: 520px) {
+  .subscribe__form {
+    margin-bottom: 20px;
+  }
 }
 .subscribe__input {
   display: block;
@@ -2239,6 +2394,11 @@ li a:focus {
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid #707070;
+}
+@media (max-width: 520px) {
+  .subscribe__input {
+    padding-right: 0;
+  }
 }
 .subscribe__input::placeholder {
   font-family: inherit;
@@ -2263,6 +2423,12 @@ li a:focus {
   background-color: #fff;
   border: 1px solid #a39161;
   transition: all 150ms ease-in-out;
+}
+@media (max-width: 520px) {
+  .subscribe__btn {
+    position: relative;
+    margin-top: 20px;
+  }
 }
 .subscribe__btn:hover, .subscribe__btn:focus {
   outline: 0;

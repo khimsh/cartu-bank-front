@@ -1,6 +1,13 @@
+@use '../base/config' as *;
+
 .news {
     margin-top: 60px;
     margin-bottom: 84px;
+
+    @media (max-width: $md-tablet) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
     &__title {
         margin-bottom: 62px;
@@ -9,6 +16,10 @@
         font-weight: 700;
         color: #000;
         text-align: center;
+
+        @media (max-width: $md-tablet) {
+            margin-bottom: 30px;
+        }
     }
 
     &__grid {
@@ -17,6 +28,10 @@
         justify-content: space-between;
         column-gap: 30px;
         row-gap: 50px;
+
+        @media (max-width: 520px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__link {

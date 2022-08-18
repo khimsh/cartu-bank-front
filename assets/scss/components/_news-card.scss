@@ -3,6 +3,10 @@
     align-items: center;
     gap: 10px;
 
+    @media (max-width: 520px) {
+        flex-direction: column;
+    }
+
     &__image {
         flex-shrink: 0;
         width: 174px;

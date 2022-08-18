@@ -88,4 +88,26 @@
             color: #fff;
         }
     }
+
+    &__lang {
+        a {
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-size: 12px;
+            color: #fff;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        span {
+            transform: translateY(2px);
+        }
+
+        img {
+            flex-shrink: 0;
+        }
+    }
 }

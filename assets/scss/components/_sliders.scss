@@ -1,5 +1,15 @@
+@use '../base/config' as *;
+
 .index-slider {
     height: 537px;
+
+    @media (max-width: $md-desktop) {
+        height: 420px;
+    }
+
+    @media (max-width: $md-tablet) {
+        height: 320px;
+    }
 
     &__slide {
         position: relative;
@@ -33,7 +43,7 @@
 
     &__title {
         font-family: var(--ff-nino-mtavruli);
-        font-size: 55px;
+        font-size: clamp(20px, 2vw + 1rem, 55px);
         font-weight: 700;
         color: #fff;
         text-transform: uppercase;

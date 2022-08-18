@@ -44,6 +44,11 @@
             align-items: center;
         }
 
+        @media (max-width: 680px) {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
         &--vertical {
             flex-direction: column;
             gap: 16px;
