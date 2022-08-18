@@ -1857,7 +1857,7 @@ li a:focus {
 .products__grid {
   padding-inline: 137px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(393px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(323px, 1fr));
   justify-content: space-between;
   gap: 60px;
 }
@@ -1963,8 +1963,32 @@ li a:focus {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 1100px) {
+  .footer__grid {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 .footer__grid > * {
   flex-basis: 240px;
+}
+@media (max-width: 1100px) {
+  .footer__grid > * {
+    display: none;
+  }
+  .footer__grid > *:nth-child(1), .footer__grid > *:nth-child(2) {
+    display: block;
+  }
+}
+@media (max-width: 1440px) {
+  .footer__grid > * {
+    flex-basis: 210px;
+    gap: 20px;
+  }
+}
+.footer__nav:first-of-type {
+  display: none;
 }
 .footer__title {
   margin-bottom: 19px;
@@ -1972,6 +1996,12 @@ li a:focus {
   font-size: 20px;
   font-weight: 700;
   color: #1c5285;
+}
+@media (max-width: 1440px) {
+  .footer__title {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
 }
 .footer__list {
   display: flex;
@@ -1988,6 +2018,12 @@ li a:focus {
   color: #474747;
   text-decoration: none;
 }
+@media (max-width: 1440px) {
+  .footer__link {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+}
 .footer__copy {
   font-family: "BPG Mrgvlovani Caps 2010";
   font-size: 14px;
@@ -1996,6 +2032,12 @@ li a:focus {
 .footer__copy a {
   color: inherit;
   text-decoration: none;
+}
+@media (max-width: 1440px) {
+  .footer img {
+    width: 160px;
+    height: auto;
+  }
 }
 
 .services {
@@ -2126,6 +2168,11 @@ li a:focus {
 .social-menu--footer {
   margin-top: 40px;
   margin-bottom: 30px;
+}
+@media (max-width: 1440px) {
+  .social-menu--footer {
+    margin-block: 20px;
+  }
 }
 
 .subscribe {

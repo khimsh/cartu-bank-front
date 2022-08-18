@@ -1,3 +1,5 @@
+@use '../base/config' as *;
+
 .footer {
     background-color: #f6f6f6;
     padding-top: 50px;
@@ -8,8 +10,34 @@
         justify-content: space-between;
         align-items: flex-start;
 
+        @media (max-width: $md-tablet) {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
         & > * {
             flex-basis: 240px;
+
+            @media (max-width: $md-tablet) {
+                display: none;
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    display: block;
+                }
+            }
+
+            @media (max-width: $md-desktop) {
+                flex-basis: 210px;
+                gap: 20px;
+            }
+        }
+    }
+
+    &__nav {
+        &:first-of-type {
+            display: none;
         }
     }
 
@@ -19,6 +47,11 @@
         font-size: 20px;
         font-weight: 700;
         color: #1c5285;
+
+        @media (max-width: $md-desktop) {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
     }
 
     &__list {
@@ -37,6 +70,11 @@
         font-weight: 700;
         color: #474747;
         text-decoration: none;
+
+        @media (max-width: $md-desktop) {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
     }
 
     &__copy {
@@ -47,6 +85,13 @@
         a {
             color: inherit;
             text-decoration: none;
+        }
+    }
+
+    img {
+        @media (max-width: $md-desktop) {
+            width: 160px;
+            height: auto;
         }
     }
 }
