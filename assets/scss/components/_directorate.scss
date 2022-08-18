@@ -1,6 +1,7 @@
 .directorate {
+    max-width: 940px;
+
     &__grid {
-        max-width: 940px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
         column-gap: 80px;

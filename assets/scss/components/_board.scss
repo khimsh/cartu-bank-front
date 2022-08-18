@@ -1,6 +1,7 @@
 .board {
+    max-width: 760px;
+
     &__grid {
-        max-width: 760px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
         column-gap: 20px;

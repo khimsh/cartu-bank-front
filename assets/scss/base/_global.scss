@@ -129,10 +129,14 @@ li {
         margin-bottom: 31px;
         font-size: 20px;
         color: #003d76;
+
+        @media (max-width: 520px) {
+            margin-bottom: 16px;
+        }
     }
 
     h3 {
-        margin-top: 50px;
+        // margin-top: 50px;
         font-size: 18px;
     }
 
@@ -171,4 +175,8 @@ li {
     color: #003d76;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media (max-width: 520px) {
+        margin-bottom: 16px;
+    }
 }
