@@ -1181,6 +1181,7 @@ li a:focus {
   .fixed-menu {
     top: unset;
     position: relative;
+    right: 0;
   }
 }
 .fixed-menu__list {
