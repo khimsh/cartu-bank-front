@@ -49,11 +49,11 @@
 
     // Open Search Field
     function headerSearchForm() {
-        if (!document.querySelector('.header__search-form')) return
+        if (!document.querySelector('.search-form')) return
 
         const btn = document.querySelector('.header__search-btn')
         const btnFixed = document.querySelector('[data-toggle-search]')
-        const searchForm = document.querySelector('.header__search-form')
+        const searchForm = document.querySelector('.search-form')
 
         btn.addEventListener('click', () => {
             searchForm.classList.toggle('active')
@@ -85,8 +85,8 @@
     // Remove active class from dom elements on outside click
     document.addEventListener('click', (e) => {
         // Remove search form
-        if (!e.target.matches('.header__search-btn, .header__search-form, .header__search-form *, [data-toggle-search]')) {
-            const searchForm = document.querySelector('.header__search-form')
+        if (!e.target.matches('.header__search-btn, .search-form, .search-form *, [data-toggle-search]')) {
+            const searchForm = document.querySelector('.search-form')
             if (searchForm.classList.contains('active')) {
                 searchForm.classList.remove('active')
             }
@@ -168,4 +168,21 @@
     }
 
     activeSideMenu()
+
+    // Partner text hide/show
+    function partnerContent() {
+        if (!document.querySelector('.partner')) return
+
+        const partners = document.querySelectorAll('.partner')
+
+        partners.forEach((partner) => {
+            const btn = partner.querySelector('.partner__see-more')
+
+            btn.addEventListener('click', () => {
+                partner.classList.toggle('open')
+            })
+        })
+    }
+
+    partnerContent()
 })()

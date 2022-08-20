@@ -1,3 +1,5 @@
+@use '../base/config' as *;
+
 .reports {
     &__grid {
         display: flex;
@@ -101,6 +103,22 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+
+        @media (max-width: 1220px) {
+            grid-template-columns: 1fr;
+        }
+
+        @media (max-width: $md-tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 720px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__file {
+        min-width: calc(50% - 30px);
     }
 
     &__link {

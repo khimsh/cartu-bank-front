@@ -680,13 +680,13 @@
                                 <img src="assets/images/gb-flag.png" alt="" />
                             </a>
                         </div>
+                    </div>
 
-                        <div class="header__search-form">
-                            <form action="#">
-                                <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
-                        </div>
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
                     </div>
                 </header>
             </div>
@@ -740,7 +740,7 @@
                         <nav class="side-menu__nav">
                             <ul class="side-menu__list">
                                 <li class="side-menu__item">
-                                    <div class="side-menu__dropdown active">
+                                    <div class="side-menu__dropdown">
                                         <button class="side-menu__btn">
                                             <span>მიმოხილვა</span>
                                             <i class="fa-solid fa-caret-down"></i>
@@ -749,7 +749,7 @@
                                         <div class="side-menu__content">
                                             <ul class="side-menu__dopdown-list">
                                                 <li class="side-menu__dropdown-item">
-                                                    <a class="side-menu__link active" href="history.html">ისტორია</a>
+                                                    <a class="side-menu__link" href="history.html">ისტორია</a>
                                                 </li>
                                                 <li class="side-menu__dropdown-item">
                                                     <a class="side-menu__link" href="mission.html">მისია და ხედვა</a>
@@ -786,7 +786,7 @@
                                 </li>
 
                                 <li class="side-menu__item">
-                                    <div class="side-menu__dropdown">
+                                    <div class="side-menu__dropdown active">
                                         <button class="side-menu__btn">
                                             <span>ფინანსური მონაცემები</span>
                                             <i class="fa-solid fa-caret-down"></i>
@@ -803,7 +803,7 @@
                                                     >
                                                 </li>
                                                 <li class="side-menu__dropdown-item">
-                                                    <a class="side-menu__link" href="yearly-report-pillar-3.html"
+                                                    <a class="side-menu__link active" href="yearly-report-pillar-3.html"
                                                         >პოლარ 3-ის წლიური ანგარიშები</a
                                                     >
                                                 </li>
@@ -1148,5 +1148,31 @@
                 </div>
             </div>
         </footer>
+
+        <!-- fixed menu -->
+        <div class="fixed-menu">
+            <ul class="fixed-menu__list">
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn" data-toggle-search>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>ძიება საიტზე</span>
+                    </button>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__btn" href="contact.html">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>სერვისცენტრები და ბანკომატები</span>
+                    </a>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <span>ონლაინ დახმარება</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>

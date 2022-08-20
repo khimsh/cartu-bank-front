@@ -55,65 +55,6 @@
         }
     }
 
-    &__search-form {
-        position: absolute;
-        left: 0;
-        right: 0;
-        padding: 30px 20px;
-        bottom: -96px;
-        background-color: #fff;
-        border-radius: 0 0 20px 20px;
-        // box-shadow: 0 3px 6px hsl(0 0% 0% / 0.16);
-
-        transform: scaleY(0);
-        transform-origin: top;
-        opacity: 0;
-        transition: all 200ms ease-in-out;
-
-        &.active {
-            transform: scaleY(1);
-            opacity: 1;
-        }
-
-        form {
-            display: flex;
-            gap: 10px;
-        }
-
-        input {
-            flex: 1;
-            height: 50px;
-            padding: 0 20px;
-            background-color: #f8f8f8;
-            font-family: inherit;
-            font-size: 14px;
-            font-weight: 400;
-            color: #000;
-            border-radius: 5px;
-            border: 1px solid #ececec;
-
-            &::placeholder {
-                color: #9f9f9f;
-            }
-        }
-
-        button {
-            height: 50px;
-            font-size: 20px;
-            color: #fff;
-            background-color: #1c5285;
-            border: 0;
-            border-radius: 5px;
-            padding-inline: 20px;
-            transition: all 200ms ease-in-out;
-
-            &:hover,
-            &:focus {
-                background-color: #a39161;
-            }
-        }
-    }
-
     &__internet-bank-btn {
         margin-right: 20px;
         height: 78px;

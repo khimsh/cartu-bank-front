@@ -8,6 +8,10 @@
         padding: 0 !important;
         list-style: none !important;
         width: fit-content;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     li {
@@ -18,10 +22,25 @@
         grid-template-columns: 7fr 3fr;
         border-bottom: 1px solid #707070;
 
+        @media (max-width: 768px) {
+            gap: 30px;
+        }
+
+        @media (max-width: 460px) {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
         span {
             font-family: var(--ff-mrgvlovani);
             font-size: 14px;
             color: #040c23;
+
+            &:nth-child(2) {
+                @media (max-width: 460px) {
+                    font-weight: 700;
+                }
+            }
         }
     }
 }

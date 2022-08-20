@@ -180,3 +180,23 @@ li {
         margin-bottom: 16px;
     }
 }
+
+main {
+    @media (max-width: 1800px) {
+        padding-right: 145px;
+    }
+
+    @media (max-width: $md-tablet) {
+        padding-right: unset;
+    }
+}
+
+.responsive-table {
+    width: 90vw;
+    max-width: 840px;
+    overflow-x: auto;
+
+    table {
+        width: 100%;
+    }
+}

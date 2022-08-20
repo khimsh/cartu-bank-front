@@ -680,13 +680,13 @@
                                 <img src="assets/images/gb-flag.png" alt="" />
                             </a>
                         </div>
+                    </div>
 
-                        <div class="header__search-form">
-                            <form action="#">
-                                <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
-                        </div>
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
                     </div>
                 </header>
             </div>
@@ -1261,5 +1261,31 @@
                 </div>
             </div>
         </footer>
+
+        <!-- fixed menu -->
+        <div class="fixed-menu">
+            <ul class="fixed-menu__list">
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn" data-toggle-search>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>ძიება საიტზე</span>
+                    </button>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__btn" href="contact.html">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>სერვისცენტრები და ბანკომატები</span>
+                    </a>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <span>ონლაინ დახმარება</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
