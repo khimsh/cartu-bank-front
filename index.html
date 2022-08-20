@@ -680,15 +680,15 @@
                                 <img src="assets/images/gb-flag.png" alt="" />
                             </a>
                         </div>
-
-                        <div class="header__search-form">
-                            <form action="#">
-                                <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
-                        </div>
                     </div>
                 </header>
+
+                <div class="header__search-form">
+                    <form action="#">
+                        <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
             </div>
 
             <header class="header-mobile">
@@ -778,16 +778,14 @@
                                     <div class="converter__input">
                                         <input type="number" name="input-amount" id="input-amount" placeholder="0.0" />
                                         <div class="select-currency">
-                                            <button class="select-currency__btn">
-                                                <span class="select-currency__selected">GEL</span>
+                                            <select name="currency" id="">
+                                                <option value="GEL">GEL</option>
+                                                <option value="USD">USD</option>
+                                                <option value="EUR">EUR</option>
+                                                <option value="GBP">GBP</option>
+                                            </select>
+                                            <div class="select-currency__icon">
                                                 <i class="fa-solid fa-caret-down"></i>
-                                            </button>
-
-                                            <div class="select-currency__options">
-                                                <button class="select-currency__option">gel</button>
-                                                <button class="select-currency__option">usd</button>
-                                                <button class="select-currency__option">eur</button>
-                                                <button class="select-currency__option">gbp</button>
                                             </div>
                                         </div>
                                     </div>
@@ -799,16 +797,14 @@
                                     <div class="converter__input">
                                         <input type="number" name="input-amount" id="input-amount" placeholder="0.0" />
                                         <div class="select-currency">
-                                            <button class="select-currency__btn">
-                                                <span class="select-currency__selected">GEL</span>
+                                            <select name="currency" id="">
+                                                <option value="GEL">GEL</option>
+                                                <option value="USD">USD</option>
+                                                <option value="EUR">EUR</option>
+                                                <option value="GBP">GBP</option>
+                                            </select>
+                                            <div class="select-currency__icon">
                                                 <i class="fa-solid fa-caret-down"></i>
-                                            </button>
-
-                                            <div class="select-currency__options">
-                                                <button class="select-currency__option">gel</button>
-                                                <button class="select-currency__option">usd</button>
-                                                <button class="select-currency__option">eur</button>
-                                                <button class="select-currency__option">gbp</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1238,7 +1234,7 @@
         <div class="fixed-menu">
             <ul class="fixed-menu__list">
                 <li class="fixed-menu__item">
-                    <button class="fixed-menu__btn">
+                    <button class="fixed-menu__btn" data-toggle-search>
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <span>ძიება საიტზე</span>
                     </button>
@@ -1258,6 +1254,13 @@
                     </button>
                 </li>
             </ul>
+
+            <!-- <form action="#" class="fixed-search">
+                <input type="search" name="search" id="fixed-search-input" />
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form> -->
         </div>
     </body>
 </html>

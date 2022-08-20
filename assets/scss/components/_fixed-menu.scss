@@ -67,6 +67,7 @@
 
         i {
             font-size: 24px;
+            pointer-events: none;
         }
 
         span {
@@ -74,6 +75,7 @@
             font-size: 12px;
             text-align: center;
             line-height: 1;
+            pointer-events: none;
 
             @media (max-width: $md-tablet) {
                 transform: translateY(3px);
@@ -84,4 +86,12 @@
             }
         }
     }
+}
+
+.fixed-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
 }

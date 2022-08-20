@@ -1229,12 +1229,14 @@ li a:focus {
 }
 .fixed-menu__btn i {
   font-size: 24px;
+  pointer-events: none;
 }
 .fixed-menu__btn span {
   font-family: var(--ff-nino-mtavruli);
   font-size: 12px;
   text-align: center;
   line-height: 1;
+  pointer-events: none;
 }
 @media (max-width: 1100px) {
   .fixed-menu__btn span {
@@ -1245,6 +1247,14 @@ li a:focus {
   .fixed-menu__btn span {
     display: none;
   }
+}
+
+.fixed-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
 }
 
 .currency-rates {
@@ -1580,41 +1590,34 @@ li a:focus {
 .select-currency.open .select-currency__options {
   max-height: 500px;
 }
-.select-currency__btn {
+.select-currency select {
   padding-inline: 18px;
+  width: 85px;
   height: 60px;
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: var(--ff-mrgvlovani-caps);
+  font-size: 14px;
+  text-transform: uppercase;
   background-color: #fff;
   border: 0;
   border-radius: 5px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   transition: border-radius 100ms ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
 }
-.select-currency__selected {
-  font-size: 14px;
-  color: #000000;
-  text-transform: uppercase;
+.select-currency select:focus {
+  outline-color: #003d76;
 }
-.select-currency__options {
-  max-height: 0;
-  overflow: hidden;
-  background-color: #fff;
-  border-radius: 0 0 5px 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  transition: max-height 200ms ease-in-out;
-}
-.select-currency__option {
-  background-color: transparent;
-  border: 0;
-  text-transform: uppercase;
-  padding-inline: 18px;
-  padding-block: 5px;
-  text-align: left;
+.select-currency__icon {
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .deposit-calculator {

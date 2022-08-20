@@ -52,9 +52,13 @@
         if (!document.querySelector('.header__search-form')) return
 
         const btn = document.querySelector('.header__search-btn')
+        const btnFixed = document.querySelector('[data-toggle-search]')
         const searchForm = document.querySelector('.header__search-form')
 
         btn.addEventListener('click', () => {
+            searchForm.classList.toggle('active')
+        })
+        btnFixed.addEventListener('click', () => {
             searchForm.classList.toggle('active')
         })
     }
@@ -81,7 +85,7 @@
     // Remove active class from dom elements on outside click
     document.addEventListener('click', (e) => {
         // Remove search form
-        if (!e.target.matches('.header__search-btn, .header__search-form, .header__search-form *')) {
+        if (!e.target.matches('.header__search-btn, .header__search-form, .header__search-form *, [data-toggle-search]')) {
             const searchForm = document.querySelector('.header__search-form')
             if (searchForm.classList.contains('active')) {
                 searchForm.classList.remove('active')
