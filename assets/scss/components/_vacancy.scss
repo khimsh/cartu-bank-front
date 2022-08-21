@@ -10,6 +10,10 @@
         grid-template-columns: 356px 160px 229px 187px;
         gap: 20px;
 
+        @media (max-width: 1700px) {
+            grid-template-columns: 2fr 1fr 2fr 1fr;
+        }
+
         font-family: var(--ff-mrgvlovani);
         font-size: 12px;
         color: #003d76;
@@ -25,10 +29,21 @@
 }
 
 .vacancy {
+    &.open {
+        .vacancy__content {
+            max-height: 5000px;
+            margin-top: 30px;
+        }
+    }
+
     &__shown {
         display: grid;
         grid-template-columns: 356px 160px 229px 187px;
         gap: 20px;
+
+        @media (max-width: 1700px) {
+            grid-template-columns: 2fr 1fr 2fr 1fr;
+        }
 
         & > div {
             padding: 20px 22px;
@@ -63,15 +78,17 @@
         }
     }
 
-    &__full {
-        margin-top: 30px;
-    }
-
     &__content {
-        padding: 26px 29px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 500ms ease-in-out;
         background-color: #f9f9f9;
         border-radius: 10px;
         box-shadow: 0 3px 6px hsl(0 0% 0% / 0.16);
+    }
+
+    &__wrapper {
+        padding: 26px 29px;
 
         & > * + * {
             margin-top: 20px;
@@ -97,6 +114,7 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        flex-wrap: wrap;
 
         input[name='name'] {
             display: block;

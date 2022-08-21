@@ -183,6 +183,26 @@
             })
         })
     }
-
     partnerContent()
+
+    function showVacancyContent() {
+        if (!document.querySelector('.vacancy')) return
+
+        const vacancies = document.querySelectorAll('.vacancy')
+
+        vacancies.forEach((vacancy) => {
+            const btn = vacancy.querySelector('.vacancy__btn')
+
+            btn.addEventListener('click', () => {
+                vacancy.classList.toggle('open')
+
+                if (vacancy.classList.contains('open')) {
+                    btn.innerHTML = `<i class="fa-solid fa-arrow-up"></i>`
+                } else {
+                    btn.innerHTML = 'გაიგე მეტი'
+                }
+            })
+        })
+    }
+    showVacancyContent()
 })()

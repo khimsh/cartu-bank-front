@@ -2724,16 +2724,30 @@ li a:focus {
   font-size: 12px;
   color: #003d76;
 }
+@media (max-width: 1700px) {
+  .vacancies__heading {
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+  }
+}
 .vacancies.text-flow li,
 .vacancies.text-flow p,
 .vacancies.text-flow a {
   font-size: 16px;
 }
 
+.vacancy.open .vacancy__content {
+  max-height: 5000px;
+  margin-top: 30px;
+}
 .vacancy__shown {
   display: grid;
   grid-template-columns: 356px 160px 229px 187px;
   gap: 20px;
+}
+@media (max-width: 1700px) {
+  .vacancy__shown {
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+  }
 }
 .vacancy__shown > div {
   padding: 20px 22px;
@@ -2762,16 +2776,18 @@ li a:focus {
   border: 0;
   border-radius: 10px;
 }
-.vacancy__full {
-  margin-top: 30px;
-}
 .vacancy__content {
-  padding: 26px 29px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 3px 6px hsla(0deg, 0%, 0%, 0.16);
 }
-.vacancy__content > * + * {
+.vacancy__wrapper {
+  padding: 26px 29px;
+}
+.vacancy__wrapper > * + * {
   margin-top: 20px;
 }
 .vacancy ul ul {
@@ -2789,6 +2805,7 @@ li a:focus {
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .vacancy__form-container input[name=name] {
   display: block;
