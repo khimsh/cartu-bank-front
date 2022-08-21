@@ -680,15 +680,14 @@
                                 <img src="assets/images/gb-flag.png" alt="" />
                             </a>
                         </div>
-
-                        <div class="header__search-form">
-                            <form action="#">
-                                <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
-                        </div>
                     </div>
                 </header>
+                <div class="search-form">
+                    <form action="#">
+                        <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
             </div>
 
             <header class="header-mobile">
@@ -740,7 +739,7 @@
                         <nav class="side-menu__nav">
                             <ul class="side-menu__list">
                                 <li class="side-menu__item">
-                                    <div class="side-menu__dropdown active">
+                                    <div class="side-menu__dropdown">
                                         <button class="side-menu__btn">
                                             <span>მიმოხილვა</span>
                                             <i class="fa-solid fa-caret-down"></i>
@@ -749,7 +748,7 @@
                                         <div class="side-menu__content">
                                             <ul class="side-menu__dopdown-list">
                                                 <li class="side-menu__dropdown-item">
-                                                    <a class="side-menu__link active" href="history.html">ისტორია</a>
+                                                    <a class="side-menu__link" href="history.html">ისტორია</a>
                                                 </li>
                                                 <li class="side-menu__dropdown-item">
                                                     <a class="side-menu__link" href="mission.html">მისია და ხედვა</a>
@@ -863,7 +862,7 @@
                                 </li>
 
                                 <li class="side-menu__item">
-                                    <div class="side-menu__dropdown">
+                                    <div class="side-menu__dropdown active">
                                         <button class="side-menu__btn">
                                             <span>კონტაქტი</span>
                                             <i class="fa-solid fa-caret-down"></i>
@@ -872,7 +871,7 @@
                                         <div class="side-menu__content">
                                             <ul class="side-menu__dopdown-list">
                                                 <li class="side-menu__dropdown-item">
-                                                    <a class="side-menu__link" href="requisites.html">ბანკის რეკვიზიტები</a>
+                                                    <a class="side-menu__link active" href="requisites.html">ბანკის რეკვიზიტები</a>
                                                 </li>
                                                 <li class="side-menu__dropdown-item">
                                                     <a class="side-menu__link" href="contact.html">ბანკომატები და სერვის ცენტრები</a>
@@ -917,7 +916,7 @@
                                     <p>საქართველო, თბილისი 0162, ჭავჭავაძის გამზ. 39ა</p>
                                 </div>
 
-                                <div style="display: flex; gap: 36px; align-items: center">
+                                <div class="requisites__items">
                                     <div class="requisites__item">
                                         <i class="fa-solid fa-phone"></i>
                                         <p>*8080, <a href="tel:+(032) 200 80 80">(032) 200 80 80</a></p>
@@ -1026,5 +1025,31 @@
                 </div>
             </div>
         </footer>
+
+        <!-- fixed menu -->
+        <div class="fixed-menu">
+            <ul class="fixed-menu__list">
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn" data-toggle-search>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>ძიება საიტზე</span>
+                    </button>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__btn" href="contact.html">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>სერვისცენტრები და ბანკომატები</span>
+                    </a>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <span>ონლაინ დახმარება</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>

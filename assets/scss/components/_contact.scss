@@ -1,6 +1,7 @@
 .contact {
     &__filters {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
 
         select {
@@ -15,6 +16,11 @@
             border-radius: 5px;
             cursor: pointer;
 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+
             &:focus {
                 outline-color: #174e82;
             }
@@ -23,6 +29,17 @@
                 line-height: 1;
             }
         }
+    }
+
+    &__filter-wrapper {
+        position: relative;
+    }
+
+    &__filter-icon {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     h3 {
@@ -100,6 +117,20 @@
         justify-content: space-between;
         align-items: center;
         gap: 20px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        & > * {
+            flex-basis: 50%;
+
+            @media (max-width: 768px) {
+                flex-basis: unset;
+                width: 100%;
+            }
+        }
     }
 
     .social-menu {
@@ -116,4 +147,5 @@
     max-width: 905px;
     height: 244px;
     border-radius: 5px;
+    box-shadow: 0 3px 6px hsl(0 0% 0% / 0.16);
 }

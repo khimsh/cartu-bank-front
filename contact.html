@@ -680,15 +680,15 @@
                                 <img src="assets/images/gb-flag.png" alt="" />
                             </a>
                         </div>
-
-                        <div class="header__search-form">
-                            <form action="#">
-                                <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
-                        </div>
                     </div>
                 </header>
+
+                <div class="search-form">
+                    <form action="#">
+                        <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
             </div>
 
             <header class="header-mobile">
@@ -740,7 +740,7 @@
                         <nav class="side-menu__nav">
                             <ul class="side-menu__list">
                                 <li class="side-menu__item">
-                                    <div class="side-menu__dropdown active">
+                                    <div class="side-menu__dropdown">
                                         <button class="side-menu__btn">
                                             <span>მიმოხილვა</span>
                                             <i class="fa-solid fa-caret-down"></i>
@@ -749,7 +749,7 @@
                                         <div class="side-menu__content">
                                             <ul class="side-menu__dopdown-list">
                                                 <li class="side-menu__dropdown-item">
-                                                    <a class="side-menu__link active" href="history.html">ისტორია</a>
+                                                    <a class="side-menu__link" href="history.html">ისტორია</a>
                                                 </li>
                                                 <li class="side-menu__dropdown-item">
                                                     <a class="side-menu__link" href="mission.html">მისია და ხედვა</a>
@@ -863,7 +863,7 @@
                                 </li>
 
                                 <li class="side-menu__item">
-                                    <div class="side-menu__dropdown">
+                                    <div class="side-menu__dropdown active">
                                         <button class="side-menu__btn">
                                             <span>კონტაქტი</span>
                                             <i class="fa-solid fa-caret-down"></i>
@@ -875,7 +875,7 @@
                                                     <a class="side-menu__link" href="requisites.html">ბანკის რეკვიზიტები</a>
                                                 </li>
                                                 <li class="side-menu__dropdown-item">
-                                                    <a class="side-menu__link" href="contact.html">ბანკომატები და სერვის ცენტრები</a>
+                                                    <a class="side-menu__link active" href="contact.html">ბანკომატები და სერვის ცენტრები</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -905,30 +905,45 @@
                             <h2>ბანკომატები და სერვის ცენტრები</h2>
 
                             <div class="contact__filters">
-                                <select name="region" id="region">
-                                    <option value="">რეგიონი</option>
-                                    <option value="tbilisi">თბილისი</option>
-                                    <option value="imereti">იმერეთი</option>
-                                    <option value="adjara">აჭარა</option>
-                                    <option value="kakheti">კახეთი</option>
-                                    <option value="kartli">ქართლი</option>
-                                </select>
-                                <select name="city" id="city">
-                                    <option value="">ქალაქი</option>
-                                    <option value="tbilisi">თბილისი</option>
-                                    <option value="imereti">იმერეთი</option>
-                                    <option value="adjara">აჭარა</option>
-                                    <option value="kakheti">კახეთი</option>
-                                    <option value="kartli">ქართლი</option>
-                                </select>
-                                <select name="district" id="district">
-                                    <option value="">უბანი</option>
-                                    <option value="tbilisi">თბილისი</option>
-                                    <option value="imereti">იმერეთი</option>
-                                    <option value="adjara">აჭარა</option>
-                                    <option value="kakheti">კახეთი</option>
-                                    <option value="kartli">ქართლი</option>
-                                </select>
+                                <div class="contact__filter-wrapper">
+                                    <select name="region" id="region">
+                                        <option value="">რეგიონი</option>
+                                        <option value="tbilisi">თბილისი</option>
+                                        <option value="imereti">იმერეთი</option>
+                                        <option value="adjara">აჭარა</option>
+                                        <option value="kakheti">კახეთი</option>
+                                        <option value="kartli">ქართლი</option>
+                                    </select>
+                                    <div class="contact__filter-icon">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                </div>
+                                <div class="contact__filter-wrapper">
+                                    <select name="city" id="city">
+                                        <option value="">ქალაქი</option>
+                                        <option value="tbilisi">თბილისი</option>
+                                        <option value="imereti">იმერეთი</option>
+                                        <option value="adjara">აჭარა</option>
+                                        <option value="kakheti">კახეთი</option>
+                                        <option value="kartli">ქართლი</option>
+                                    </select>
+                                    <div class="contact__filter-icon">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                </div>
+                                <div class="contact__filter-wrapper">
+                                    <select name="district" id="district">
+                                        <option value="">უბანი</option>
+                                        <option value="tbilisi">თბილისი</option>
+                                        <option value="imereti">იმერეთი</option>
+                                        <option value="adjara">აჭარა</option>
+                                        <option value="kakheti">კახეთი</option>
+                                        <option value="kartli">ქართლი</option>
+                                    </select>
+                                    <div class="contact__filter-icon">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                </div>
                             </div>
 
                             <h3>სერვისცენტრები</h3>
@@ -974,10 +989,10 @@
                                 </div>
 
                                 <div class="contact-form__flex">
-                                    <div class="contact-form__field" style="flex-basis: 50%">
+                                    <div class="contact-form__field">
                                         <input type="email" name="email" id="email" placeholder="ელ.ფოსტა" />
                                     </div>
-                                    <div class="contact-form__field" style="flex-basis: 50%">
+                                    <div class="contact-form__field">
                                         <input type="tel" name="tel" id="tel" placeholder="ტელეფონი" />
                                     </div>
                                 </div>
@@ -1104,5 +1119,31 @@
                 </div>
             </div>
         </footer>
+
+        <!-- fixed menu -->
+        <div class="fixed-menu">
+            <ul class="fixed-menu__list">
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn" data-toggle-search>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>ძიება საიტზე</span>
+                    </button>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__btn" href="contact.html">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>სერვისცენტრები და ბანკომატები</span>
+                    </a>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <span>ონლაინ დახმარება</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
