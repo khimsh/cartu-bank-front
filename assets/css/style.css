@@ -1189,7 +1189,7 @@ li a:focus {
   top: 209px;
   z-index: 10000;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1660px) {
   .fixed-menu {
     right: 16px;
   }
@@ -2166,6 +2166,7 @@ li a:focus {
   color: #003d76;
 }
 .partner__see-more {
+  flex-shrink: 0;
   width: 20px;
   height: 20px;
   display: grid;
