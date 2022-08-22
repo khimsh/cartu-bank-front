@@ -988,7 +988,7 @@
                                 <div class="services">
                                     <h3 class="services__title">წლიური საპროცენტო განაკვეთი, სარგებლის ვადის ბოლოს გატანის შემთხვევაში</h3>
 
-                                    <div class="responsive-table">
+                                    <div class="services__table-resp">
                                         <div class="services__table">
                                             <table>
                                                 <thead>
@@ -1145,28 +1145,43 @@
 
                                             <div class="deposit-calculator__group">
                                                 <label for="withdrawal">დარიცხული სარგებლის გატანა</label>
-                                                <select name="withdrawal" id="withdrawal">
-                                                    <option value="">ვადის ბოლოს</option>
-                                                    <option value="">ვადის დასაწყისში</option>
-                                                </select>
+                                                <div class="select">
+                                                    <select name="withdrawal" id="withdrawal">
+                                                        <option value="">ვადის ბოლოს</option>
+                                                        <option value="">ვადის დასაწყისში</option>
+                                                    </select>
+                                                    <div class="select__icon">
+                                                        <i class="fa-solid fa-caret-down"></i>
+                                                    </div>
+                                                </div>
                                             </div>
 
                                             <div class="deposit-calculator__group">
                                                 <label for="term">ვადა</label>
-                                                <select name="term" id="term">
-                                                    <option value="3">3</option>
-                                                    <option value="6">6</option>
-                                                    <option value="9">9</option>
-                                                </select>
+                                                <div class="select">
+                                                    <select name="term" id="term">
+                                                        <option value="3">3</option>
+                                                        <option value="6">6</option>
+                                                        <option value="9">9</option>
+                                                    </select>
+                                                    <div class="select__icon">
+                                                        <i class="fa-solid fa-caret-down"></i>
+                                                    </div>
+                                                </div>
                                             </div>
 
                                             <div class="deposit-calculator__group">
                                                 <label for="currency">ვალუტა</label>
-                                                <select name="currency" id="currency">
-                                                    <option value="GEL">GEL</option>
-                                                    <option value="USD">USD</option>
-                                                    <option value="EUR">EUR</option>
-                                                </select>
+                                                <div class="select">
+                                                    <select name="currency" id="currency">
+                                                        <option value="GEL">GEL</option>
+                                                        <option value="USD">USD</option>
+                                                        <option value="EUR">EUR</option>
+                                                    </select>
+                                                    <div class="select__icon">
+                                                        <i class="fa-solid fa-caret-down"></i>
+                                                    </div>
+                                                </div>
                                             </div>
 
                                             <div class="deposit-calculator__group">
