@@ -5,8 +5,9 @@
 
     &__title {
         margin-bottom: 30px;
+        padding-block: 10px;
         padding-inline: 20px;
-        height: 60px;
+        min-height: 60px;
         display: flex;
         align-items: center;
         font-size: 20px;
@@ -34,6 +35,18 @@
         align-items: center;
         gap: 16px;
         border-bottom: 1px solid #707070;
+
+        @media (max-width: 1280px) {
+            min-width: unset;
+            width: 100%;
+            padding-right: 0;
+        }
+
+        span {
+            &:nth-child(2) {
+                white-space: nowrap;
+            }
+        }
     }
 
     &__nested-list {
@@ -50,6 +63,7 @@
 
     &__table {
         font-size: 14px;
+        min-width: 800px;
 
         table {
             width: 100%;

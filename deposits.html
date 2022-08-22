@@ -630,11 +630,15 @@
 
                                     <div class="nav__content">
                                         <ul class="nav__list">
-                                            <li class="nav__item"><a href="#" class="nav__link">საოპერაციო მომსახურება</a></li>
-                                            <li class="nav__item"><a href="#" class="nav__link">სესხები</a></li>
-                                            <li class="nav__item"><a href="#" class="nav__link">დოკუმენტური ოპერაციები</a></li>
+                                            <li class="nav__item">
+                                                <a href="legal-operational-services.html" class="nav__link">საოპერაციო მომსახურება</a>
+                                            </li>
+                                            <li class="nav__item"><a href="legal-import.html" class="nav__link">სესხები</a></li>
+                                            <li class="nav__item">
+                                                <a href="legal-warranty.html" class="nav__link">დოკუმენტური ოპერაციები</a>
+                                            </li>
                                             <li class="nav__item"><a href="#" class="nav__link">სახაზინო პროდუქტები</a></li>
-                                            <li class="nav__item"><a href="#" class="nav__link">ანაბრები</a></li>
+                                            <li class="nav__item"><a href="deposits.html" class="nav__link">ანაბრები</a></li>
                                             <li class="nav__item"><a href="#" class="nav__link">პლასტიკური ბარათები</a></li>
                                             <li class="nav__item"><a href="#" class="nav__link">ელექტრონული კომერცია</a></li>
                                             <li class="nav__item"><a href="#" class="nav__link">დისტანციური მომსახურება</a></li>
@@ -680,15 +684,15 @@
                                 <img src="assets/images/gb-flag.png" alt="" />
                             </a>
                         </div>
-
-                        <div class="header__search-form">
-                            <form action="#">
-                                <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
-                        </div>
                     </div>
                 </header>
+
+                <div class="search-form">
+                    <form action="#">
+                        <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
             </div>
 
             <header class="header-mobile">
@@ -984,64 +988,66 @@
                                 <div class="services">
                                     <h3 class="services__title">წლიური საპროცენტო განაკვეთი, სარგებლის ვადის ბოლოს გატანის შემთხვევაში</h3>
 
-                                    <div class="services__table">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>ანაბრის ვადა</th>
-                                                    <th colspan="2">ლარი</th>
-                                                    <th colspan="2">აშშ დოლარი</th>
-                                                    <th colspan="2">ევრო</th>
-                                                </tr>
-                                                <tr>
-                                                    <th></th>
-                                                    <th>ნომინალური</th>
-                                                    <th>ეფექტური</th>
-                                                    <th>ნომინალური</th>
-                                                    <th>ეფექტური</th>
-                                                    <th>ნომინალური</th>
-                                                    <th>ეფექტური</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>3 - 5 თვე</td>
-                                                    <td>8.00%</td>
-                                                    <td>8.24%</td>
-                                                    <td>0.40%</td>
-                                                    <td>0.40%</td>
-                                                    <td>0.00%</td>
-                                                    <td>0.00%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3 - 5 თვე</td>
-                                                    <td>8.00%</td>
-                                                    <td>8.24%</td>
-                                                    <td>0.40%</td>
-                                                    <td>0.40%</td>
-                                                    <td>0.00%</td>
-                                                    <td>0.00%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3 - 5 თვე</td>
-                                                    <td>8.00%</td>
-                                                    <td>8.24%</td>
-                                                    <td>0.40%</td>
-                                                    <td>0.40%</td>
-                                                    <td>0.00%</td>
-                                                    <td>0.00%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3 - 5 თვე</td>
-                                                    <td>8.00%</td>
-                                                    <td>8.24%</td>
-                                                    <td>0.40%</td>
-                                                    <td>0.40%</td>
-                                                    <td>0.00%</td>
-                                                    <td>0.00%</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="responsive-table">
+                                        <div class="services__table">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>ანაბრის ვადა</th>
+                                                        <th colspan="2">ლარი</th>
+                                                        <th colspan="2">აშშ დოლარი</th>
+                                                        <th colspan="2">ევრო</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>ნომინალური</th>
+                                                        <th>ეფექტური</th>
+                                                        <th>ნომინალური</th>
+                                                        <th>ეფექტური</th>
+                                                        <th>ნომინალური</th>
+                                                        <th>ეფექტური</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>3 - 5 თვე</td>
+                                                        <td>8.00%</td>
+                                                        <td>8.24%</td>
+                                                        <td>0.40%</td>
+                                                        <td>0.40%</td>
+                                                        <td>0.00%</td>
+                                                        <td>0.00%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3 - 5 თვე</td>
+                                                        <td>8.00%</td>
+                                                        <td>8.24%</td>
+                                                        <td>0.40%</td>
+                                                        <td>0.40%</td>
+                                                        <td>0.00%</td>
+                                                        <td>0.00%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3 - 5 თვე</td>
+                                                        <td>8.00%</td>
+                                                        <td>8.24%</td>
+                                                        <td>0.40%</td>
+                                                        <td>0.40%</td>
+                                                        <td>0.00%</td>
+                                                        <td>0.00%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3 - 5 თვე</td>
+                                                        <td>8.00%</td>
+                                                        <td>8.24%</td>
+                                                        <td>0.40%</td>
+                                                        <td>0.40%</td>
+                                                        <td>0.00%</td>
+                                                        <td>0.00%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -1261,5 +1267,31 @@
                 </div>
             </div>
         </footer>
+
+        <!-- fixed menu -->
+        <div class="fixed-menu">
+            <ul class="fixed-menu__list">
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn" data-toggle-search>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>ძიება საიტზე</span>
+                    </button>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__btn" href="contact.html">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>სერვისცენტრები და ბანკომატები</span>
+                    </a>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <span>ონლაინ დახმარება</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>

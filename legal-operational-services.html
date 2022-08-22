@@ -192,7 +192,7 @@
                                     <div class="mobile-menu__content">
                                         <ul class="mobile-menu__dopdown-list">
                                             <li class="mobile-menu__dropdown-item">
-                                                <a class="mobile-menu__link" href="#">იმპორტირებული წარმოება</a>
+                                                <a class="mobile-menu__link" href="legal-import.html">იმპორტირებული წარმოება</a>
                                             </li>
                                             <li class="mobile-menu__dropdown-item">
                                                 <a class="mobile-menu__link" href="#">ქსელური ბიზნესი</a>
@@ -630,11 +630,15 @@
 
                                     <div class="nav__content">
                                         <ul class="nav__list">
-                                            <li class="nav__item"><a href="#" class="nav__link">საოპერაციო მომსახურება</a></li>
-                                            <li class="nav__item"><a href="#" class="nav__link">სესხები</a></li>
-                                            <li class="nav__item"><a href="#" class="nav__link">დოკუმენტური ოპერაციები</a></li>
+                                            <li class="nav__item">
+                                                <a href="legal-operational-services.html" class="nav__link">საოპერაციო მომსახურება</a>
+                                            </li>
+                                            <li class="nav__item"><a href="legal-import.html" class="nav__link">სესხები</a></li>
+                                            <li class="nav__item">
+                                                <a href="legal-warranty.html" class="nav__link">დოკუმენტური ოპერაციები</a>
+                                            </li>
                                             <li class="nav__item"><a href="#" class="nav__link">სახაზინო პროდუქტები</a></li>
-                                            <li class="nav__item"><a href="#" class="nav__link">ანაბრები</a></li>
+                                            <li class="nav__item"><a href="deposits.html" class="nav__link">ანაბრები</a></li>
                                             <li class="nav__item"><a href="#" class="nav__link">პლასტიკური ბარათები</a></li>
                                             <li class="nav__item"><a href="#" class="nav__link">ელექტრონული კომერცია</a></li>
                                             <li class="nav__item"><a href="#" class="nav__link">დისტანციური მომსახურება</a></li>
@@ -680,15 +684,15 @@
                                 <img src="assets/images/gb-flag.png" alt="" />
                             </a>
                         </div>
-
-                        <div class="header__search-form">
-                            <form action="#">
-                                <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
-                        </div>
                     </div>
                 </header>
+
+                <div class="search-form">
+                    <form action="#">
+                        <input type="search" name="search" id="search" placeholder="ჩაწერეთ საძიებო ფრაზა" />
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
             </div>
 
             <header class="header-mobile">
@@ -748,7 +752,7 @@
                                         <div class="side-menu__content">
                                             <ul class="side-menu__dopdown-list">
                                                 <li class="side-menu__dropdown-item">
-                                                    <a class="side-menu__link" href="#">იმპორტირებული წარმოება</a>
+                                                    <a class="side-menu__link" href="legal-import.html">იმპორტირებული წარმოება</a>
                                                 </li>
                                                 <li class="side-menu__dropdown-item">
                                                     <a class="side-menu__link" href="#">ქსელური ბიზნესი</a>
@@ -822,7 +826,7 @@
                                         <div class="side-menu__content">
                                             <ul class="side-menu__dopdown-list">
                                                 <li class="side-menu__dropdown-item">
-                                                    <a class="side-menu__link" href="#">ვადიანი ანაბარი</a>
+                                                    <a class="side-menu__link" href="deposits.html">ვადიანი ანაბარი</a>
                                                 </li>
                                                 <li class="side-menu__dropdown-item">
                                                     <a class="side-menu__link" href="#">ზრდადი ანაბარი</a>
@@ -1150,5 +1154,31 @@
                 </div>
             </div>
         </footer>
+
+        <!-- fixed menu -->
+        <div class="fixed-menu">
+            <ul class="fixed-menu__list">
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn" data-toggle-search>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>ძიება საიტზე</span>
+                    </button>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__btn" href="contact.html">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>სერვისცენტრები და ბანკომატები</span>
+                    </a>
+                </li>
+
+                <li class="fixed-menu__item">
+                    <button class="fixed-menu__btn">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <span>ონლაინ დახმარება</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
