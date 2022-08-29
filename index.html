@@ -22,6 +22,7 @@
         <!-- JS -->
         <script src="assets/js/swiper-bundle.min.js" defer></script>
         <script src="assets/js/script.js" defer></script>
+        <script src="assets/js/converter.js" defer></script>
     </head>
     <body>
         <div class="mobile-menu">
@@ -778,41 +779,43 @@
                             </div>
 
                             <div class="converter__container">
-                                <div class="converter__content">
-                                    <div class="converter__input">
-                                        <input type="number" name="input-amount" id="input-amount" placeholder="0.0" />
-                                        <div class="select-currency">
-                                            <select name="currency" id="">
-                                                <option value="GEL">GEL</option>
-                                                <option value="USD">USD</option>
-                                                <option value="EUR">EUR</option>
-                                                <option value="GBP">GBP</option>
-                                            </select>
-                                            <div class="select-currency__icon">
-                                                <i class="fa-solid fa-caret-down"></i>
+                                <form action="#" class="convert-currency">
+                                    <div class="converter__content">
+                                        <div class="converter__input">
+                                            <input type="number" name="input-amount" id="input-amount" placeholder="0.0" data-input-one />
+                                            <div class="select-currency">
+                                                <select name="currency" id="" data-select-one>
+                                                    <option value="GEL">GEL</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="EUR">EUR</option>
+                                                    <option value="GBP">GBP</option>
+                                                </select>
+                                                <div class="select-currency__icon">
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="converter__switch">
+                                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                        </button>
+
+                                        <div class="converter__input">
+                                            <input type="number" name="input-amount" id="input-amount" placeholder="0.0" data-input-two />
+                                            <div class="select-currency">
+                                                <select name="currency" id="" data-select-two>
+                                                    <option value="GEL">GEL</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="EUR">EUR</option>
+                                                    <option value="GBP">GBP</option>
+                                                </select>
+                                                <div class="select-currency__icon">
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <button class="converter__switch">
-                                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                                    </button>
-
-                                    <div class="converter__input">
-                                        <input type="number" name="input-amount" id="input-amount" placeholder="0.0" />
-                                        <div class="select-currency">
-                                            <select name="currency" id="">
-                                                <option value="GEL">GEL</option>
-                                                <option value="USD">USD</option>
-                                                <option value="EUR">EUR</option>
-                                                <option value="GBP">GBP</option>
-                                            </select>
-                                            <div class="select-currency__icon">
-                                                <i class="fa-solid fa-caret-down"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
