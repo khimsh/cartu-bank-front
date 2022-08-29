@@ -86,6 +86,6 @@
     // Convert provided amount from any currency to GEL
     function convertToGEL(currencyName, currencyRate, amount) {
         if (currencyName === 'GEL') return amount
-        return (amount / currencyRate).toFixed(2)
+        return (amount * currencyRate).toFixed(2)
     }
 })()
