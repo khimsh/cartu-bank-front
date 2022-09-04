@@ -44,6 +44,7 @@
         })
     })
 
+    // Event Listeners
     inputOne.addEventListener('input', () => {
         const inputOneValue = parseFloat(inputOne.value)
         const selectOneValue = selectOne.value
@@ -79,7 +80,7 @@
     // Calculate & Update Inputs
     function calculate(input, inputRate, outputRate, output, activeMode) {
         // თუ ერთიდაიგივე ვალუტაა არჩეული,
-        // ინფუთის მნიშვლელობას აბრუნებს აუთფუთში
+        // ინფუთის მნიშვლელობას აბრუნებს აუთფუთში უცვლელად
         if (inputRate === outputRate) {
             output.value = input
             return
@@ -91,7 +92,6 @@
 
         // დაკონვერტირებულ მნიშვნელობას შემდეგ ვამრავლებთ არჩეული ვალუტის კურსზე
         const calculatedAmount = (inputOneValueToGEL * currencies[outputRate][activeMode]).toFixed(2)
-        console.log(calculatedAmount)
         output.value = calculatedAmount
     }
 
@@ -101,7 +101,6 @@
 
         // ლარში კონვერტაციის დროს ინფუთის მნიშვნელობის გამრავლება არჩეულ ვალუტის კურსზე არასწორ შედეგს გვაძლევს.
         // გაყოფა არის სწორი მოქმედება, ჩემი აზრით.
-        console.log((amount / currencyRate).toFixed(2))
         return (amount / currencyRate).toFixed(2)
     }
 })()
