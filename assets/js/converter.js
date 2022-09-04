@@ -78,14 +78,30 @@
 
     // Calculate & Update Inputs
     function calculate(input, inputRate, outputRate, output, activeMode) {
+        // თუ ერთიდაიგივე ვალუტაა არჩეული,
+        // ინფუთის მნიშვლელობას აბრუნებს აუთფუთში
+        if (inputRate === outputRate) {
+            output.value = input
+            return
+        }
+
+        // თუ არჩეული კურსი არ არის GEL
+        // ინფუთს ვაკონვერტირებთ ლარში
         const inputOneValueToGEL = convertToGEL(inputRate, currencies[inputRate][activeMode], input)
+
+        // დაკონვერტირებულ მნიშვნელობას შემდეგ ვამრავლებთ არჩეული ვალუტის კურსზე
         const calculatedAmount = (inputOneValueToGEL * currencies[outputRate][activeMode]).toFixed(2)
+        console.log(calculatedAmount)
         output.value = calculatedAmount
     }
 
     // Convert provided amount from any currency to GEL
     function convertToGEL(currencyName, currencyRate, amount) {
         if (currencyName === 'GEL') return amount
-        return (amount * currencyRate).toFixed(2)
+
+        // ლარში კონვერტაციის დროს ინფუთის მნიშვნელობის გამრავლება არჩეულ ვალუტის კურსზე არასწორ შედეგს გვაძლევს.
+        // გაყოფა არის სწორი მოქმედება, ჩემი აზრით.
+        console.log((amount / currencyRate).toFixed(2))
+        return (amount / currencyRate).toFixed(2)
     }
 })()
