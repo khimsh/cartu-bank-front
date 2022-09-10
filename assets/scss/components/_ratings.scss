@@ -1,13 +1,14 @@
 .rating {
     &__image {
-        margin-bottom: 26px;
+        margin-bottom: 4px;
     }
 
     &__info {
         margin: 0 !important;
-        padding: 0 !important;
         list-style: none !important;
-        width: fit-content;
+        padding: 44px 36px !important;
+        box-shadow: 0 3px 6px hsl(0 0% 0% / 0.16);
+        border-radius: 20px;
 
         @media (max-width: 768px) {
             width: 100%;
@@ -15,12 +16,14 @@
     }
 
     li {
-        margin-bottom: 24px;
         padding-bottom: 24px;
-        padding-right: 40px;
         display: grid;
         grid-template-columns: 7fr 3fr;
-        border-bottom: 1px solid #707070;
+        border-bottom: 1px solid #959595;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
 
         @media (max-width: 768px) {
             gap: 30px;
