@@ -205,4 +205,19 @@
         })
     }
     showVacancyContent()
+
+    function expandable() {
+        if (!document.querySelector('.expandable')) return
+
+        const expandables = document.querySelectorAll('.expandable')
+
+        expandables.forEach((expandable) => {
+            const trigger = expandable.querySelector('.expandable__trigger')
+
+            trigger.addEventListener('click', () => {
+                expandable.classList.toggle('open')
+            })
+        })
+    }
+    expandable()
 })()
