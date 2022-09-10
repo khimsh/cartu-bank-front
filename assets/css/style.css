@@ -254,6 +254,30 @@ li a:focus {
   width: 100%;
 }
 
+.title-with-bg {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  font-size: 20px;
+  color: #003d76;
+  line-height: 1.2;
+  background-color: #e8edf3;
+}
+@media (max-width: 768px) {
+  .title-with-bg {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+}
+.title-with-bg:not(:first-of-type) {
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .title-with-bg:not(:first-of-type) {
+    margin-top: 20px;
+  }
+}
+
 .side-menu {
   padding-bottom: 30px;
   background-color: #174e82;

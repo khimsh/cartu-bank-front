@@ -220,3 +220,26 @@ main {
         width: 100%;
     }
 }
+
+.title-with-bg {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 20px 30px;
+    font-size: 20px;
+    color: #003d76;
+    line-height: 1.2;
+    background-color: #e8edf3;
+
+    @media (max-width: 768px) {
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+
+    &:not(:first-of-type) {
+        margin-top: 40px;
+
+        @media (max-width: 768px) {
+            margin-top: 20px;
+        }
+    }
+}
