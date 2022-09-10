@@ -2,8 +2,19 @@
 
 .footer {
     background-color: #f6f6f6;
+    margin-bottom: 50px;
     padding-top: 50px;
     padding-bottom: 40px;
+    padding-inline: 40px 20px;
+    border-radius: 20px;
+
+    @media (max-width: $md-tablet) {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
 
     &__grid {
         display: flex;
