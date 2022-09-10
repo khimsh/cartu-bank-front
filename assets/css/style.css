@@ -1533,7 +1533,7 @@ li a:focus {
   transition: all 200ms ease-in-out;
 }
 .report__content {
-  background-color: #003d76;
+  background-color: #6388ab;
   border-radius: 0 0 5px 5px;
   max-height: 0;
   overflow: hidden;
